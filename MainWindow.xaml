@@ -7,7 +7,9 @@
         xmlns:tb="http://www.hardcodet.net/taskbar"
         mc:Ignorable="d"
         Title="MainWindow"
-        AllowsTransparency="True">
+        KeyDown="MainWindow_KeyDown"
+        AllowsTransparency="True"
+        Closing="MainWindow_Closing">
     <Window.Background>
         <SolidColorBrush Opacity="0.5" Color="Black" />
     </Window.Background>

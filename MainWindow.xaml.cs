@@ -1,6 +1,7 @@
 ﻿using Hardcodet.Wpf.TaskbarNotification;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,23 @@ namespace poe_archnemesis_acs
 
             WindowState = WindowState.Maximized;
             WindowStyle = WindowStyle.None;
+            ShowInTaskbar = false;
 
+
+        }
+
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (Keyboard.IsKeyDown(Key.LeftShift) && e.Key == Key.OemTilde)
+            {
+                Console.WriteLine("yes..");
+                this.Show();
+            }
+        }
+
+        private void MainWindow_Closing(object sender, CancelEventArgs e)
+        {
+            MessageBox.Show("Closing called");
         }
     }
 }

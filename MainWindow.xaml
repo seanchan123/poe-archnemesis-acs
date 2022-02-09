@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:poe_archnemesis_acs"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Opacity="0.5" Color="Black" />
+    </Window.Background>
     <Grid>
-        
+        <tb:TaskbarIcon
+            Name="acsTaskbar"
+            IconSource="/Resources/Icon.ico"
+            ToolTipText="Archnemesis ACS" />
     </Grid>
 </Window>

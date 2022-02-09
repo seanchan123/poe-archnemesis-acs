@@ -9,7 +9,9 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         KeyDown="MainWindow_KeyDown"
-        Closing="MainWindow_Closing">
+        Closing="MainWindow_Closing" 
+        d:DesignWidth="1920"
+        d:DesignHeight="1080">
     <Window.Background>
         <SolidColorBrush Opacity="0.5" Color="Black" />
     </Window.Background>

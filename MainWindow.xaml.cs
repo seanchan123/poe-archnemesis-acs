@@ -13,6 +13,8 @@ namespace poe_archnemesis_acs
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        #region "Hotkey Event Listener"
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
 
@@ -57,7 +59,23 @@ namespace poe_archnemesis_acs
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
                             if (vkey == VK_OEM_3)
                             {
-                                MessageBox.Show("yay");
+                                if (this.ShowActivated == false)
+                                {
+                                    //For startup
+                                    this.WindowState = WindowState.Maximized;
+                                    this.ShowActivated = true;
+                                    this.Show();
+                                } else
+                                {
+                                    if (this.Visibility == Visibility.Hidden)
+                                    {
+                                        this.Show();
+                                    }
+                                    else
+                                    {
+                                        this.Hide();
+                                    }
+                                }
                             }
                             handled = true;
                             break;
@@ -66,30 +84,37 @@ namespace poe_archnemesis_acs
             }
             return IntPtr.Zero;
         }
+        #endregion
 
         public MainWindow()
         {
             InitializeComponent();
 
-            WindowState = WindowState.Maximized;
-            WindowStyle = WindowStyle.None;
+            Width = 0;
+            Height = 0;
             ShowInTaskbar = false;
+            ShowActivated = false;
 
+            this.Show();
         }
 
+        #region "MainWindow Event Listeners"
+        //Event Listener for KeyDown when MainWindow is focused
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
             //if (Keyboard.IsKeyDown(Key.LeftShift) && e.Key == Key.OemTilde)
-            //{
-            //    Console.WriteLine("yes..");
-            //    this.Show();
-            //}
+            if (e.Key == Key.Z)
+            {
+                MessageBox.Show("yes..");
+            }
         }
 
+        //EventListener for Closing when closing MainWindow/Exiting Application
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
             MessageBox.Show("Closing called");
         }
+        #endregion
 
     }
 }

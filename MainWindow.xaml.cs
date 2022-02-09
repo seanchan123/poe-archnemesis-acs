@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hardcodet.Wpf.TaskbarNotification;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace poe_archnemesis_acs
         public MainWindow()
         {
             InitializeComponent();
+
+            WindowState = WindowState.Maximized;
+            WindowStyle = WindowStyle.None;
+
         }
     }
 }

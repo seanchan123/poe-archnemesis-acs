@@ -12,3 +12,6 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe_archnemesis
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.csproj.GenerateResource.cache
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.exe
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.pdb
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Hardcodet.NotifyIcon.Wpf.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Hardcodet.NotifyIcon.Wpf.xml
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.csproj.CopyComplete

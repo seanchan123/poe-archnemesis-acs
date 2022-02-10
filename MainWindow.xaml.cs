@@ -17,6 +17,7 @@ using System.Drawing.Imaging;
 using MessageBox = System.Windows.MessageBox;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using System.Collections.Generic;
+using System.IO;
 
 namespace poe_archnemesis_acs
 {
@@ -84,6 +85,7 @@ namespace poe_archnemesis_acs
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
+                                        Screenshot();
                                         MatchImage();
                                         this.Show();
                                     }
@@ -135,45 +137,61 @@ namespace poe_archnemesis_acs
         #region Image Matching
         private void MatchImage()
         {
-            List<string> modsImgSrc = new List<string>();
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\mana-siphoner.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\mirror-image.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\empowered-elements.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\storm-strider.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\arcane-buffer.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\bloodletter.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\bonebreaker.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\brine-king-touched.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\corrupter.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\drought-bringer.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\effigy.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\frenzied.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\frost-strider.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\frostweaver.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\incendiary.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\invulnerable.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\juggernaut.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\magma-barrier.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\malediction.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\overcharged.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\permafrost.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\rejuvenating.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\shakari-touched.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\stormweaver.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\crystal-skinned.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\entangler.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\executioner.png");
-            modsImgSrc.Add("..\\..\\Resources\\Mods\\necromancer.png");
+            int totalCount = 0;
+
+            //Coallate all archnemesis mod names
+            List<string> modNames = new List<string>();
+            modNames.Add("mana-siphoner");
+            modNames.Add("mirror-image");
+            modNames.Add("empowered-elements");
+            modNames.Add("storm-strider");
+            modNames.Add("arcane-buffer");
+            modNames.Add("bloodletter");
+            modNames.Add("bonebreaker");
+            modNames.Add("brine-king-touched");
+            modNames.Add("corrupter");
+            modNames.Add("drought-bringer");
+            modNames.Add("effigy");
+            modNames.Add("frenzied");
+            modNames.Add("frost-strider");
+            modNames.Add("frostweaver");
+            modNames.Add("incendiary");
+            modNames.Add("invulnerable");
+            modNames.Add("juggernaut");
+            modNames.Add("magma-barrier");
+            modNames.Add("malediction");
+            modNames.Add("overcharged");
+            modNames.Add("permafrost");
+            modNames.Add("rejuvenating");
+            modNames.Add("shakari-touched");
+            modNames.Add("stormweaver");
+            modNames.Add("crystal-skinned");
+            modNames.Add("entangler");
+            modNames.Add("executioner");
+            modNames.Add("necromancer");
+            modNames.Add("gargantuan");
+
+            //Store in List<ArchnemesisModModel> to fetch it more accurately
+            List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
+            foreach (string modName in modNames)
+            {
+                ArchnemesisModModel archnemesisMod = new ArchnemesisModModel();
+                archnemesisMod.Name = modName;
+                archnemesisMod.ImageSource = "..\\..\\Resources\\Mods\\" + modName + ".png";
+                archnemesisMod.Count = 0;
+
+                archnemesisMods.Add(archnemesisMod);
+            }
 
             using (Mat reference = new Mat("..\\..\\Resources\\Capture.jpg"))
             {
-                foreach(string modImgSrc in modsImgSrc)
+                foreach(ArchnemesisModModel archnemesisMod in archnemesisMods)
                 {
-                    using (Mat template = new Mat(modImgSrc))
+                    using (Mat template = new Mat(archnemesisMod.ImageSource))
                     using (Mat results = new Mat(reference.Rows - template.Rows + 1, reference.Cols - template.Cols + 1, MatType.CV_32FC1))
                     {
                         Cv2.MatchTemplate(reference, template, results, TemplateMatchModes.CCorrNormed);
-                        Cv2.Threshold(results, results, 0.97, 1.0, ThresholdTypes.Tozero);
+                        Cv2.Threshold(results, results, 0.98, 1.0, ThresholdTypes.Tozero);
 
                         //Random colors for match
                         Random randomValue = new Random();
@@ -183,7 +201,7 @@ namespace poe_archnemesis_acs
 
                         while (true)
                         {
-                            double minval, maxval, threshold = 0.97;
+                            double minval, maxval, threshold = 0.98;
                             Point minloc, maxloc;
                             Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
 
@@ -199,15 +217,33 @@ namespace poe_archnemesis_acs
                                 //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
                                 Rect outRect;
                                 Cv2.FloodFill(results, maxloc, new Scalar(0), out outRect, new Scalar(0.1), new Scalar(1.0));
+
+                                //Add count if archnemesis mod exists
+                                archnemesisMod.Count++;
+                                totalCount++;
                             }
                             else
                                 break;
                         }
                     }
                 }
+
+                List<int> asd = new List<int>();
+                int total = 0;
+
+                foreach(ArchnemesisModModel ac in archnemesisMods)
+                {
+                    asd.Add(ac.Count);
+                    total += ac.Count;
+                }
+
+                asd = asd;
+
                 Cv2.ImShow("Matches", reference);
                 Cv2.WaitKey(5);
             }
+
+            File.Delete("..\\..\\Resources\\Capture.jpg");
         }
 
         private void Screenshot()

@@ -5,6 +5,10 @@ using System.ComponentModel;
 using System.Windows.Interop;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Util;
+using Emgu.CV.UI;
 
 namespace poe_archnemesis_acs
 {
@@ -65,7 +69,9 @@ namespace poe_archnemesis_acs
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
-                                } else
+                                    MatchImage();
+                                }
+                                else
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
@@ -117,6 +123,19 @@ namespace poe_archnemesis_acs
         #endregion
 
         #region Image Matching
+
+        long matchTime;
+
+        private void MatchImage()
+        {
+            using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.Color))
+            using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.JPG", ImreadModes.Color))
+            {
+                Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
+                ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
+            }
+
+        }
 
         #endregion
     }

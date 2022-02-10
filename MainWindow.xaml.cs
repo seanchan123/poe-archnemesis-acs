@@ -10,6 +10,13 @@ using Point = OpenCvSharp.Point;
 using Size = OpenCvSharp.Size;
 using Rect = OpenCvSharp.Rect;
 
+using System.Windows.Forms;
+using System.Drawing;
+using System.Drawing.Imaging;
+
+using MessageBox = System.Windows.MessageBox;
+using KeyEventArgs = System.Windows.Input.KeyEventArgs;
+
 namespace poe_archnemesis_acs
 {
     /// <summary>
@@ -66,15 +73,17 @@ namespace poe_archnemesis_acs
                                 if (this.ShowActivated == false)
                                 {
                                     //For startup
+                                    Screenshot();
+                                    MatchImage();
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
-                                    MatchImage();
                                 }
                                 else
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
+                                        MatchImage();
                                         this.Show();
                                     }
                                     else
@@ -136,7 +145,7 @@ namespace poe_archnemesis_acs
                 Mat gtpl = template.CvtColor(ColorConversionCodes.BGR2RGB);
 
                 Cv2.MatchTemplate(gref, gtpl, results, TemplateMatchModes.CCorrNormed);
-                Cv2.Threshold(results, results, 0.9, 1.0, ThresholdTypes.Tozero);
+                Cv2.Threshold(results, results, 0.85, 1.0, ThresholdTypes.Tozero);
 
                 while (true)
                 {
@@ -144,13 +153,17 @@ namespace poe_archnemesis_acs
                     Point minloc, maxloc;
                     Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
 
+
                     if (maxval >= threshold)
                     {
+                        //Random colors for match
+                        Random rValue = new Random();
+
                         //Setup the rectangle to draw
                         Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(template.Width, template.Height));
 
                         //Draw a rectangle of the matching area
-                        Cv2.Rectangle(reference, r, Scalar.LimeGreen, 2);
+                        Cv2.Rectangle(reference, r, Scalar.FromRgb(rValue.Next(0, 255), rValue.Next(0, 255), rValue.Next(0,255)), 2);
 
                         //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
                         Rect outRect;
@@ -165,13 +178,37 @@ namespace poe_archnemesis_acs
 
             }
 
-            //List<string> modLogoSrc = new List<string>();
-            //modLogoSrc.Add("..\\..\\Resources\\mirror-image.png");
-            //string xd = "";
+        }
+
+        private void Screenshot()
+        {
+            int screenLeft = SystemInformation.VirtualScreen.Left;
+            int screenTop = SystemInformation.VirtualScreen.Top;
+            int screenWidth = SystemInformation.VirtualScreen.Width;
+            int screenHeight = SystemInformation.VirtualScreen.Height;
+
+            // Create a bitmap of the appropriate size to receive the full-screen screenshot.
+            using (Bitmap bitmap = new Bitmap(screenWidth, screenHeight))
+            {
+                // Draw the screenshot into our bitmap.
+                using (Graphics g = Graphics.FromImage(bitmap))
+                {
+                    g.CopyFromScreen(screenLeft, screenTop, 0, 0, bitmap.Size);
+                }
+
+                //Save the screenshot as a Jpg image
+                var uniqueFileName = "..\\..\\Resources\\Capture.jpg";
+                try
+                {
+                    bitmap.Save(uniqueFileName, ImageFormat.Jpeg);
+                }
+                catch (Exception ex)
+                {
+                }
+            }
 
         }
 
         #endregion
-
     }
 }

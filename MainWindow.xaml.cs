@@ -158,7 +158,8 @@ namespace poe_archnemesis_acs
             modNames.Add("incendiary");
             modNames.Add("invulnerable");
             modNames.Add("juggernaut");
-            modNames.Add("magma-barrier");
+            modNames.Add("magma-barrier-1");
+            modNames.Add("magma-barrier-2");
             modNames.Add("malediction");
             modNames.Add("overcharged");
             modNames.Add("permafrost");
@@ -170,6 +171,23 @@ namespace poe_archnemesis_acs
             modNames.Add("executioner");
             modNames.Add("necromancer");
             modNames.Add("gargantuan");
+            modNames.Add("echoist");
+            modNames.Add("flame-strider");
+            modNames.Add("hasted");
+            modNames.Add("heralding-minions");
+            modNames.Add("sentinel");
+            modNames.Add("soul-eater");
+            modNames.Add("steel-infused");
+            modNames.Add("treant-horde");
+            modNames.Add("deadeye");
+            modNames.Add("berserker");
+            modNames.Add("chaosweaver");
+            modNames.Add("consecrator");
+            modNames.Add("dynamo");
+            modNames.Add("flameweaver");
+            modNames.Add("soul-conduit");
+            modNames.Add("toxic");
+            modNames.Add("vampiric");
 
             //Store in List<ArchnemesisModModel> to fetch it more accurately
             List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
@@ -184,6 +202,7 @@ namespace poe_archnemesis_acs
             }
 
             using (Mat reference = new Mat("..\\..\\Resources\\Capture.jpg"))
+            //using (Mat reference = new Mat("..\\..\\Resources\\Test1.png"))
             {
                 foreach(ArchnemesisModModel archnemesisMod in archnemesisMods)
                 {

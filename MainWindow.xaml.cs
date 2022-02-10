@@ -44,6 +44,8 @@ namespace poe_archnemesis_acs
         private const uint MOD_WIN = 0x0008; //WINDOWS
         //TILDE (~):
         private const uint VK_OEM_3 = 0xC0;
+        //CAPS LOCK
+        private const uint VK_CAPITAL = 0x14;
 
         const int WM_HOTKEY = 0x0312;
 
@@ -58,7 +60,7 @@ namespace poe_archnemesis_acs
             _source = HwndSource.FromHwnd(_windowHandle);
             _source.AddHook(HwndHook);
 
-            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_OEM_3); //SHIFT + ~
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_CAPITAL); //LSHIFT + CAPS
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -70,13 +72,13 @@ namespace poe_archnemesis_acs
                     {
                         case HOTKEY_ID:
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
-                            if (vkey == VK_OEM_3)
+                            if (vkey == VK_CAPITAL)
                             {
                                 if (this.ShowActivated == false)
                                 {
                                     //For startup
-                                    Screenshot();
-                                    MatchImage();
+                                    //Screenshot();
+                                    //MatchImage();
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
@@ -85,8 +87,8 @@ namespace poe_archnemesis_acs
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
-                                        Screenshot();
-                                        MatchImage();
+                                        //Screenshot();
+                                        //MatchImage();
                                         this.Show();
                                     }
                                     else

@@ -65,6 +65,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ArchnemesisModModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,9 +98,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Capture.jpg" />
     <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\Mods\empowered-elements.png" />
+    <Resource Include="Resources\Mods\mana-siphoner.png" />
+    <Resource Include="Resources\Mods\mirror-image.png" />
+    <Resource Include="Resources\Mods\storm-strider.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Emgu.CV">
@@ -140,12 +144,35 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Mods\empowered-elements.png" />
-    <Resource Include="Resources\Mods\mana-siphoner.png" />
-    <Resource Include="Resources\Mods\mirror-image.png" />
+    <Resource Include="Resources\Mods\arcane-buffer.png" />
+    <Resource Include="Resources\Mods\bloodletter.png" />
+    <Resource Include="Resources\Mods\bonebreaker.png" />
+    <Resource Include="Resources\Mods\brine-king-touched.png" />
+    <Resource Include="Resources\Mods\corrupter.png" />
+    <Resource Include="Resources\Mods\drought-bringer.png" />
+    <Resource Include="Resources\Mods\effigy.png" />
+    <Resource Include="Resources\Mods\frenzied.png" />
+    <Resource Include="Resources\Mods\frost-strider.png" />
+    <Resource Include="Resources\Mods\frostweaver.png" />
+    <Resource Include="Resources\Mods\incendiary.png" />
+    <Resource Include="Resources\Mods\invulnerable.png" />
+    <Resource Include="Resources\Mods\juggernaut.png" />
+    <Resource Include="Resources\Mods\magma-barrier.png" />
+    <Resource Include="Resources\Mods\malediction.png" />
+    <Resource Include="Resources\Mods\overcharged.png" />
+    <Resource Include="Resources\Mods\permafrost.png" />
+    <Resource Include="Resources\Mods\rejuvenating.png" />
+    <Resource Include="Resources\Mods\shakari-touched.png" />
+    <Resource Include="Resources\Mods\stormweaver.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Mods\storm-strider.png" />
+    <Resource Include="Resources\Mods\crystal-skinned.png" />
+    <Resource Include="Resources\Mods\entangler.png" />
+    <Resource Include="Resources\Mods\executioner.png" />
+    <Resource Include="Resources\Mods\necromancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\gargantuan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

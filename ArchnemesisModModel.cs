@@ -9,36 +9,21 @@ namespace poe_archnemesis_acs
     class ArchnemesisModModel
     {
         private string name, imgSrc;
-        private string count;
+        private int count;
 
-        private List<string> archnemesisMod;
-        private List<List<string>> archnemesisMods;
-
-        public List<List<string>> ArchnemesisMods
-        {
-            get { return archnemesisMods; }
-            set { archnemesisMods = value; }
-        }
-
-        public List<string> ArchnemesisMod
-        {
-            get { return archnemesisMod; }
-            set { archnemesisMod = value; }
-        }
-
-        private string Name
+        public string Name
         {
             get { return name; }
             set { name = value; }
         }
 
-        private string ImageSource
+        public string ImageSource
         {
             get { return imgSrc; }
             set { imgSrc = value; }
         }
 
-        private string Count
+        public int Count
         {
             get { return count; }
             set { count = value; }

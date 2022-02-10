@@ -3,12 +3,14 @@ using System.Windows;
 using System.Windows.Input;
 using System.ComponentModel;
 using System.Windows.Interop;
-using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Emgu.CV;
 using Emgu.CV.CvEnum;
-using Emgu.CV.Util;
 using Emgu.CV.UI;
+using Emgu.CV.Structure;
+using System.Collections.Generic;
+using System.Drawing;
+using Emgu.CV.Bitmap;
 
 namespace poe_archnemesis_acs
 {
@@ -128,13 +130,51 @@ namespace poe_archnemesis_acs
 
         private void MatchImage()
         {
-            using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.Color))
-            using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.JPG", ImreadModes.Color))
-            {
-                Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
-                ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
-            }
+            //using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.Color))
+            //using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.JPG", ImreadModes.Color))
+            //{
+            //    Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
+            //    ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
+            //}
 
+            Dictionary<string, Image<Bgr, byte>> imgList = new Dictionary<string, Image<Bgr, byte>>();
+            var observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.JPG", ImreadModes.Color).Bitmap;
+
+            try
+            {
+                var imgScene = imgList["..\\..\\Resources\\mirror-image.png"].Clone();
+                IInputArray template = new Bitmap(observedImage).ToImage<Bgr, byte>();
+
+                Mat imgOut = new Mat();
+                CvInvoke.MatchTemplate(imgScene, template, imgOut, Emgu.CV.CvEnum.TemplateMatchingType.Sqdiff);
+
+                Mat imgOutNorm = new Mat();
+
+                CvInvoke.Normalize(imgOut, imgOutNorm, 0, 1, Emgu.CV.CvEnum.NormType.MinMax, Emgu.CV.CvEnum.DepthType.Cv64F);
+
+                Matrix<double> matches = new Matrix<double>(imgOutNorm.Size);
+                imgOutNorm.CopyTo(matches);
+
+                double minValue = 0, maxVal = 0;
+                System.Drawing.Point minLoc = new System.Drawing.Point();
+                System.Drawing.Point maxLoc = new System.Drawing.Point();
+
+                do
+                {
+                    CvInvoke.MinMaxLoc(matches, ref minValue, ref maxVal, ref minLoc, ref maxLoc);
+                    Rectangle r = new Rectangle(minLoc, template.Size);
+                    CvInvoke.Rectangle(imgScene, r, new MCvScalar(255, 0, 0), 1);
+
+                    matches[minLoc.Y, minLoc.X] = 0.5;
+                    matches[maxLoc.Y, maxLoc.X] = 0.5;
+                } while (minValue <= 0.80);
+
+                ImageViewer.Show(imgScene);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         #endregion

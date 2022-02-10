@@ -174,5 +174,29 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\gargantuan.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\echoist.png" />
+    <Resource Include="Resources\Mods\flame-strider.png" />
+    <Resource Include="Resources\Mods\hasted.png" />
+    <Resource Include="Resources\Mods\heralding-minions.png" />
+    <Resource Include="Resources\Mods\sentinel.png" />
+    <Resource Include="Resources\Mods\soul-eater.png" />
+    <Resource Include="Resources\Mods\steel-infused.png" />
+    <Resource Include="Resources\Mods\treant-horde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\deadeye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\berserker.png" />
+    <Resource Include="Resources\Mods\chaosweaver.png" />
+    <Resource Include="Resources\Mods\consecrator.png" />
+    <Resource Include="Resources\Mods\dynamo.png" />
+    <Resource Include="Resources\Mods\flameweaver.png" />
+    <Resource Include="Resources\Mods\soul-conduit.png" />
+    <Resource Include="Resources\Mods\toxic.png" />
+    <Resource Include="Resources\Mods\vampiric.png" />
+    <Resource Include="Resources\Test1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

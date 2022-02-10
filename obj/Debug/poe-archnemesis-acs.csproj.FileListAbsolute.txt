@@ -43,11 +43,6 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Platfor
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Hardcodet.NotifyIcon.Wpf.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Drawing.Common.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\ZedGraph.dll
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Bitmap.xml
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Platform.NetStandard.xml
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Hardcodet.NotifyIcon.Wpf.xml
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Drawing.Common.xml
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\ZedGraph.xml
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\de\ZedGraph.resources.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\es\ZedGraph.resources.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\fr\ZedGraph.resources.dll
@@ -72,3 +67,13 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.csproj.CopyComplete
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.exe
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.pdb
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Platform.NetFramework.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\cvextern.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\opencv_videoio_ffmpeg455.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\concrt140.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_1.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_2.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_atomic_wait.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_codecvt_ids.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\vcruntime140.dll

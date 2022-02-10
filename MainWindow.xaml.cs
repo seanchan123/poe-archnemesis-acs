@@ -10,6 +10,7 @@ using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System.Collections.Generic;
 using System.Drawing;
+using Emgu.CV.UI;
 
 namespace poe_archnemesis_acs
 {
@@ -127,15 +128,13 @@ namespace poe_archnemesis_acs
 
         private void MatchImage()
         {
-            MessageBox.Show("asd");
-
-            //double matchTime;
-            //using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.Color))
-            //using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.JPG", ImreadModes.Color))
-            //{
-            //    Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
-            //    ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
-            //}
+            long matchTime;
+            using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.AnyColor))
+            using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.jpg", ImreadModes.AnyColor))
+            {
+                Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
+                ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
+            }
 
         }
 

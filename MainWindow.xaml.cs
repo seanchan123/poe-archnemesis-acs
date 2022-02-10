@@ -132,20 +132,20 @@ namespace poe_archnemesis_acs
         #endregion
 
         #region Image Matching
-
         private void MatchImage()
         {
             using (Mat reference = new Mat("..\\..\\Resources\\Capture.jpg"))
             using (Mat template = new Mat("..\\..\\Resources\\mirror-image.png"))
             using (Mat results = new Mat(reference.Rows - template.Rows + 1, reference.Cols - template.Cols + 1, MatType.CV_32FC1))
             {
-                //Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
-
-                Mat gref = reference.CvtColor(ColorConversionCodes.BGR2RGB);
-                Mat gtpl = template.CvtColor(ColorConversionCodes.BGR2RGB);
-
-                Cv2.MatchTemplate(gref, gtpl, results, TemplateMatchModes.CCorrNormed);
+                Cv2.MatchTemplate(reference, template, results, TemplateMatchModes.CCorrNormed);
                 Cv2.Threshold(results, results, 0.85, 1.0, ThresholdTypes.Tozero);
+
+                //Random colors for match
+                Random randomValue = new Random();
+                int rValue = randomValue.Next(0, 255);
+                int gValue = randomValue.Next(0, 255);
+                int bValue = randomValue.Next(0, 255);
 
                 while (true)
                 {
@@ -153,17 +153,14 @@ namespace poe_archnemesis_acs
                     Point minloc, maxloc;
                     Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
 
-
                     if (maxval >= threshold)
                     {
-                        //Random colors for match
-                        Random rValue = new Random();
 
                         //Setup the rectangle to draw
                         Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(template.Width, template.Height));
 
                         //Draw a rectangle of the matching area
-                        Cv2.Rectangle(reference, r, Scalar.FromRgb(rValue.Next(0, 255), rValue.Next(0, 255), rValue.Next(0,255)), 2);
+                        Cv2.Rectangle(reference, r, Scalar.FromRgb(rValue, gValue, bValue), 2);
 
                         //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
                         Rect outRect;
@@ -208,7 +205,6 @@ namespace poe_archnemesis_acs
             }
 
         }
-
         #endregion
     }
 }

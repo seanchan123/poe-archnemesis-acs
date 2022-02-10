@@ -5,7 +5,6 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\MainWindow.g.cs
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\App.g.cs
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs_MarkupCompile.cache
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs_MarkupCompile.lref
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\MainWindow.baml
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.g.resources
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe_archnemesis_acs.Properties.Resources.resources

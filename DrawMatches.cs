@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
+using System.Diagnostics;
+
 using Emgu.CV;
-using Emgu.CV.CvEnum;
-using Emgu.CV.Features2D;
-using Emgu.CV.Flann;
-using Emgu.CV.Structure;
 using Emgu.CV.Util;
+using Emgu.CV.Flann;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using Emgu.CV.Features2D;
 
 namespace poe_archnemesis_acs
 {
@@ -122,6 +122,5 @@ namespace poe_archnemesis_acs
 
             }
         }
-
     }
 }

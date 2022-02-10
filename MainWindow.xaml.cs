@@ -6,13 +6,16 @@ using System.Windows.Interop;
 using System.Runtime.InteropServices;
 
 using OpenCvSharp;
+using Point = OpenCvSharp.Point;
+using Size = OpenCvSharp.Size;
+using Rect = OpenCvSharp.Rect;
 
 namespace poe_archnemesis_acs
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
 
         #region Hotkey Event Listener
@@ -123,13 +126,42 @@ namespace poe_archnemesis_acs
 
         private void MatchImage()
         {
-            long matchTime;
-            using (Mat modelImage = CvInvoke.Imread("..\\..\\Resources\\mirror-image.png", ImreadModes.AnyColor))
-            using (Mat observedImage = CvInvoke.Imread("..\\..\\Resources\\Capture.jpg", ImreadModes.AnyColor))
+            using (Mat reference = new Mat("..\\..\\Resources\\Capture.jpg"))
+            using (Mat template = new Mat("..\\..\\Resources\\mirror-image.png"))
+            using (Mat results = new Mat(reference.Rows - template.Rows + 1, reference.Cols - template.Cols + 1, MatType.CV_32FC1))
             {
                 //Mat result = DrawMatches.Draw(modelImage, observedImage, out matchTime);
-                //ImageViewer.Show(result, String.Format("Matched in {0} milliseconds", matchTime));
 
+                Mat gref = reference.CvtColor(ColorConversionCodes.BGR2RGB);
+                Mat gtpl = template.CvtColor(ColorConversionCodes.BGR2RGB);
+
+                Cv2.MatchTemplate(gref, gtpl, results, TemplateMatchModes.CCorrNormed);
+                Cv2.Threshold(results, results, 0.9, 1.0, ThresholdTypes.Tozero);
+
+                while (true)
+                {
+                    double minval, maxval, threshold = 0.85;
+                    Point minloc, maxloc;
+                    Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
+
+                    if (maxval >= threshold)
+                    {
+                        //Setup the rectangle to draw
+                        Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(template.Width, template.Height));
+
+                        //Draw a rectangle of the matching area
+                        Cv2.Rectangle(reference, r, Scalar.LimeGreen, 2);
+
+                        //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
+                        Rect outRect;
+                        Cv2.FloodFill(results, maxloc, new Scalar(0), out outRect, new Scalar(0.1), new Scalar(1.0));
+                    }
+                    else
+                        break;
+                }
+
+                Cv2.ImShow("Matches", reference);
+                Cv2.WaitKey(5);
 
             }
 

@@ -14,7 +14,7 @@ namespace poe_archnemesis_acs
     public partial class MainWindow : Window
     {
 
-        #region "Hotkey Event Listener"
+        #region Hotkey Event Listener
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
 
@@ -98,7 +98,7 @@ namespace poe_archnemesis_acs
             this.Show();
         }
 
-        #region "MainWindow Event Listeners"
+        #region MainWindow Event Listeners
         //Event Listener for KeyDown when MainWindow is focused
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
@@ -116,5 +116,8 @@ namespace poe_archnemesis_acs
         }
         #endregion
 
+        #region Image Matching
+
+        #endregion
     }
 }

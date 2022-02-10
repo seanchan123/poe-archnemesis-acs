@@ -42,7 +42,7 @@ namespace poe_archnemesis_acs
         private const uint MOD_CONTROL = 0x0002; //CTRL
         private const uint MOD_SHIFT = 0x0004; //SHIFT
         private const uint MOD_WIN = 0x0008; //WINDOWS
-        //CAPS LOCK:
+        //TILDE (~):
         private const uint VK_OEM_3 = 0xC0;
 
         const int WM_HOTKEY = 0x0312;
@@ -158,7 +158,7 @@ namespace poe_archnemesis_acs
             modNames.Add("incendiary");
             modNames.Add("invulnerable");
             modNames.Add("juggernaut");
-            modNames.Add("magma-barrier-1");
+            modNames.Add("magma-barrier");
             modNames.Add("magma-barrier-2");
             modNames.Add("malediction");
             modNames.Add("overcharged");
@@ -201,15 +201,15 @@ namespace poe_archnemesis_acs
                 archnemesisMods.Add(archnemesisMod);
             }
 
-            using (Mat reference = new Mat("..\\..\\Resources\\Capture.jpg"))
-            //using (Mat reference = new Mat("..\\..\\Resources\\Test1.png"))
+            using (Mat screenshot = new Mat("..\\..\\Resources\\Capture.jpg"))
+            //using (Mat screenshot = new Mat("..\\..\\Resources\\Test1.png"))
             {
-                foreach(ArchnemesisModModel archnemesisMod in archnemesisMods)
+                foreach (ArchnemesisModModel archnemesisMod in archnemesisMods)
                 {
-                    using (Mat template = new Mat(archnemesisMod.ImageSource))
-                    using (Mat results = new Mat(reference.Rows - template.Rows + 1, reference.Cols - template.Cols + 1, MatType.CV_32FC1))
+                    using (Mat archnemesisLogo = new Mat(archnemesisMod.ImageSource))
+                    using (Mat results = new Mat(screenshot.Rows - archnemesisLogo.Rows + 1, screenshot.Cols - archnemesisLogo.Cols + 1, MatType.CV_32FC1))
                     {
-                        Cv2.MatchTemplate(reference, template, results, TemplateMatchModes.CCorrNormed);
+                        Cv2.MatchTemplate(screenshot, archnemesisLogo, results, TemplateMatchModes.CCorrNormed);
                         Cv2.Threshold(results, results, 0.98, 1.0, ThresholdTypes.Tozero);
 
                         //Random colors for match
@@ -228,10 +228,10 @@ namespace poe_archnemesis_acs
                             {
 
                                 //Setup the rectangle to draw
-                                Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(template.Width, template.Height));
+                                Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(archnemesisLogo.Width, archnemesisLogo.Height));
 
                                 //Draw a rectangle of the matching area
-                                Cv2.Rectangle(reference, r, Scalar.FromRgb(rValue, gValue, bValue), 2);
+                                Cv2.Rectangle(screenshot, r, Scalar.FromRgb(rValue, gValue, bValue), 2);
 
                                 //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
                                 Rect outRect;
@@ -258,7 +258,7 @@ namespace poe_archnemesis_acs
 
                 asd = asd;
 
-                Cv2.ImShow("Matches", reference);
+                Cv2.ImShow("Matches", screenshot);
                 Cv2.WaitKey(5);
             }
 

@@ -151,25 +151,128 @@
         <Button Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
         <Button Content="Brine King-touched" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
 
-
-
         <!--4th Column-->
-        <Button Content="0 by 8" FontSize="14" Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Toxic" FontSize="14" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bloodletter" FontSize="14" Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Deadeye" FontSize="14" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Vampiric" FontSize="14" Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Flameweaver" FontSize="14" Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Hasted" FontSize="14" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Gargantuan" FontSize="14" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Vampiric" FontSize="14" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Bloodletter" FontSize="14" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Chaosweaver" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Frenzied" FontSize="14" Grid.Row="17" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Berserker" FontSize="14" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Incendiary" FontSize="14" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bonebreaker" FontSize="14" Grid.Row="20" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Overcharged" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Overcharged" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Toxic" FontSize="14" Grid.Row="29" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bloodletter" FontSize="14" Grid.Row="30" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Malediction" FontSize="14" Grid.Row="31" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Deadeye" FontSize="14" Grid.Row="32" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Button>
+
         <!--5th Column-->
-        <Button Content="0 by 10" FontSize="14" Grid.Row="1" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Incendiary" FontSize="14" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Entangler" FontSize="14" Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Flame Strider" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Rejuvenating" FontSize="14" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Frenzied" FontSize="14" Grid.Row="14" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Corrupter" FontSize="14" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Executioner" FontSize="14" Grid.Row="17" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Magma Barrier" FontSize="14" Grid.Row="19" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Bonebreaker" FontSize="14" Grid.Row="21" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Necromancer" FontSize="14" Grid.Row="22" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Bonebreaker" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Necromancer" FontSize="14" Grid.Row="25" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Soul Conduit" FontSize="14" Grid.Row="27" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Gargantuan" FontSize="14" Grid.Row="28" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Entangler" FontSize="14" Grid.Row="29" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Button>
+        <Button Content="Drought Bringer" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Button>
+
         <!--6th Column-->
-        <Button Content="0 by 12" FontSize="14" Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Button>
+
+        <Button Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Button>
+
+        <Button Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Button>
+        <Button Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Button>
+        <Button Content="Soul Eater" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue"></Button>
+
         <!--7th Column-->
-        <Button Content="0 by 14" FontSize="14" Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Button>
+        <Button Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Button>
+        <Button Content="Shakari-Touched" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple"></Button>
+
         <!--8th Column-->
-        <Button Content="0 by 8" FontSize="14" Grid.Row="1" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Frenzied" FontSize="14" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Berserker" FontSize="14" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Sentinel" FontSize="14" Grid.Row="8" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Juggernaut" FontSize="14" Grid.Row="9" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Consecrator" FontSize="14" Grid.Row="10" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Frostweaver" FontSize="14" Grid.Row="11" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Hasted" FontSize="14" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Overcharged" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Frenzied" FontSize="14" Grid.Row="15" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Berserker" FontSize="14" Grid.Row="16" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Sentinel" FontSize="14" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Juggernaut" FontSize="14" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Consecrator" FontSize="14" Grid.Row="20" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Incendiary" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Bonebreaker" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Echoist" FontSize="14" Grid.Row="23" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Soul Conduit" FontSize="14" Grid.Row="24" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Consecrator" FontSize="14" Grid.Row="25" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Dynamo" FontSize="14" Grid.Row="26" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Button>
+
         <!--9th Column-->
-        <Button Content="0 by 10" FontSize="14" Grid.Row="1" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Executioner" FontSize="14" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Gargantuan" FontSize="14" Grid.Row="7" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Invulnerable" FontSize="14" Grid.Row="8" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Button>
+        <Button Content="Frost Strider" FontSize="14" Grid.Row="11" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Necromancer" FontSize="14" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Executioner" FontSize="14" Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Gargantuan" FontSize="14" Grid.Row="17" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Button>
+
+        <Button Content="Invulnerable" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Button>
+        <Button Content="Magma Barrier" FontSize="14" Grid.Row="21" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Mirror Image" FontSize="14" Grid.Row="23" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+        <Button Content="Mana Siphoner" FontSize="14" Grid.Row="25" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen"></Button>
+
         <!--10th Column-->
-        <Button Content="0 by 12" FontSize="14" Grid.Row="1" Grid.Column="21" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Empowering Minions" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Button>
+
+        <Button Content="Empowering Minions" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Button>
+
         <!--11th Column-->
-        <Button Content="0 by 14" FontSize="14" Grid.Row="1" Grid.Column="23" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Lunaris-Touched" FontSize="14" Grid.Row="3" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Button>
+        <Button Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Button>
+        
         <!--12th Column-->
-        <Button Content="0 by 14" FontSize="14" Grid.Row="1" Grid.Column="25" Grid.ColumnSpan="2" Background="White"></Button>
+        <Button Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Button>
     </Grid>
 </Window>

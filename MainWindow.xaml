@@ -147,7 +147,7 @@
         <Button Content="Effigy" FontSize="14" Grid.Row="6" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
         <Button Content="Crystal-Skinned" FontSize="14" Grid.Row="11" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
         <Button Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
-        <Button Content="Empowered&#xA;  Elements" FontSize="14" HorizontalContentAlignment="Center" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
+        <Button Content="Empowered&#xA;  Elements" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
         <Button Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
         <Button Content="Brine King-touched" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue"></Button>
 

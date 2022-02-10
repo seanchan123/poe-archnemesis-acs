@@ -77,3 +77,15 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_2.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_atomic_wait.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\msvcp140_codecvt_ids.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\vcruntime140.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\OpenCvSharp.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Buffers.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Memory.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Numerics.Vectors.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.exe.config
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\OpenCvSharpExtern.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs_Content.g.cs

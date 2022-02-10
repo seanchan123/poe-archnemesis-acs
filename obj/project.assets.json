@@ -162,6 +162,37 @@
           "lib/netstandard2.0/OpenCvSharp.dll": {}
         }
       },
+      "OpenCvSharp4.runtime.win/4.5.5.20211231": {
+        "type": "package",
+        "build": {
+          "build/netstandard/OpenCvSharp4.runtime.win.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg455_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg455.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.5.5.20211231": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.5.5.20211231",
+          "OpenCvSharp4.runtime.win": "4.5.5.20211231"
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -401,6 +432,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/OpenCvSharp.dll": {}
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.5.5.20211231": {
+        "type": "package",
+        "build": {
+          "build/netstandard/OpenCvSharp4.runtime.win.props": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.5.5.20211231": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.5.5.20211231",
+          "OpenCvSharp4.runtime.win": "4.5.5.20211231"
         }
       },
       "System.Buffers/4.5.1": {
@@ -648,6 +692,23 @@
           "lib/netstandard2.0/OpenCvSharp.dll": {}
         }
       },
+      "OpenCvSharp4.runtime.win/4.5.5.20211231": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg455_64.dll": {}
+        },
+        "build": {
+          "build/netstandard/OpenCvSharp4.runtime.win.props": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.5.5.20211231": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.5.5.20211231",
+          "OpenCvSharp4.runtime.win": "4.5.5.20211231"
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "frameworkAssemblies": [
@@ -890,6 +951,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/OpenCvSharp.dll": {}
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.5.5.20211231": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {},
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg455.dll": {}
+        },
+        "build": {
+          "build/netstandard/OpenCvSharp4.runtime.win.props": {}
+        }
+      },
+      "OpenCvSharp4.Windows/4.5.5.20211231": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.5.5.20211231",
+          "OpenCvSharp4.runtime.win": "4.5.5.20211231"
         }
       },
       "System.Buffers/4.5.1": {
@@ -1199,6 +1277,36 @@
         "lib/netstandard2.1/OpenCvSharp.xml",
         "opencvsharp4.4.5.5.20211231.nupkg.sha512",
         "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.5.5.20211231": {
+      "sha512": "hywJLVuHQTHxroPTYWPhj59VIpoPTGoKJYyvHWWs0hnqPLPemnPCWZLJtdehdpf00U6l1QgvARJMFqc3RtSXGQ==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.5.5.20211231",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.5.5.20211231.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg455_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg455.dll"
+      ]
+    },
+    "OpenCvSharp4.Windows/4.5.5.20211231": {
+      "sha512": "Se42Zsv8v/Afr8WvtDBCNy4hHsuMNBmdg67y4ANkI+sQUuPN3UGyFo8trsy3L+sqsF/cglBIfTX6MBp871OZpg==",
+      "type": "package",
+      "path": "opencvsharp4.windows/4.5.5.20211231",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "opencvsharp4.windows.4.5.5.20211231.nupkg.sha512",
+        "opencvsharp4.windows.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -1558,6 +1666,7 @@
       "Emgu.CV.runtime.windows >= 4.5.5.4823",
       "Hardcodet.NotifyIcon.Wpf >= 1.1.0",
       "OpenCvSharp4 >= 4.5.5.20211231",
+      "OpenCvSharp4.Windows >= 4.5.5.20211231",
       "System.Drawing.Common >= 6.0.0",
       "System.Drawing.Primitives >= 4.3.0",
       "System.Runtime >= 4.3.1",
@@ -1624,6 +1733,10 @@
             "version": "[1.1.0, )"
           },
           "OpenCvSharp4": {
+            "target": "Package",
+            "version": "[4.5.5.20211231, )"
+          },
+          "OpenCvSharp4.Windows": {
             "target": "Package",
             "version": "[4.5.5.20211231, )"
           },

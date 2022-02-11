@@ -8,7 +8,7 @@ namespace poe_archnemesis_acs
 {
     class ArchnemesisModModel
     {
-        private string name, imgSrc;
+        private string name, imgSrc, ctrlName;
         private int count;
 
         public string Name
@@ -21,6 +21,12 @@ namespace poe_archnemesis_acs
         {
             get { return imgSrc; }
             set { imgSrc = value; }
+        }
+
+        public string ControlName
+        {
+            get { return ctrlName; }
+            set { ctrlName = value; }
         }
 
         public int Count

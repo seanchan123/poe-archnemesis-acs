@@ -96,7 +96,7 @@
             </Label>
 
             <!--1st Column-->
-            <Label Name="toicLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Name="toxicLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Toxic" />
                     <Bold>{<Run Text="{Binding ElementName=toxicHidden, Path=Content}" />}</Bold>
@@ -346,7 +346,7 @@
                 </TextBlock>
             </Label>
             <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-            <Label Name="bringKingTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue">
+            <Label Name="brineKingTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Brine King&#xA;Touched" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=brineKingTouchedHidden, Path=Content}" />}</Bold>

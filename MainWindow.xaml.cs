@@ -61,6 +61,8 @@ namespace poe_archnemesis_acs
         private const uint VK_OEM_3 = 0xC0;
         //A KEY
         private const uint VK_AKEY = 0x41;
+        //S KEY
+        private const uint VK_SKEY = 0x53;
 
         const int WM_HOTKEY = 0x0312;
 
@@ -75,7 +77,8 @@ namespace poe_archnemesis_acs
             _source = HwndSource.FromHwnd(_windowHandle);
             _source.AddHook(HwndHook);
 
-            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_AKEY); //LSHIFT + CAPS
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_AKEY); //LSHIFT + A
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_SKEY); //LSHIFT + S
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -89,6 +92,38 @@ namespace poe_archnemesis_acs
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
                             if (vkey == VK_AKEY)
                             {
+                                //SHOW
+                                if (this.ShowActivated == false)
+                                {
+                                    this.Topmost = true;
+                                    this.WindowState = WindowState.Maximized;
+                                    this.ShowActivated = true;
+                                    this.Show();
+
+                                    cheatsheetGrid.Opacity = 1;
+                                    loadingGrid.Opacity = 0;
+                                    modSearchTextBox.Focus();
+                                }
+                                else
+                                {
+                                    if (this.Visibility == Visibility.Hidden)
+                                    {
+                                        this.Topmost = true;
+                                        this.Show();
+
+                                        cheatsheetGrid.Opacity = 1;
+                                        loadingGrid.Opacity = 0;
+                                        modSearchTextBox.Focus();
+                                    }
+                                    else
+                                    {
+                                        this.Hide();
+                                    }
+                                }
+                            }
+                            else if (vkey == VK_SKEY)
+                            {
+                                //SCAN
                                 if (this.ShowActivated == false)
                                 {
                                     this.Topmost = true;

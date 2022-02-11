@@ -114,7 +114,12 @@
                     <Bold>{<Run Text="{Binding ElementName=steelInfusedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Name="chaosweaverLbl1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Chaosweaver" />
+                    <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Name="echoistLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Echoist" />
@@ -128,7 +133,7 @@
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Name="chaosweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
@@ -147,7 +152,7 @@
                 </TextBlock>
             </Label>
 
-            <Label Name="chaosweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Name="chaosweaverLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
@@ -174,7 +179,7 @@
             </Label>
             <Label Name="stormweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Stormweaver" /><LineBreak/>
+                    <Run Text="Stormweaver" />
                     <Bold>{<Run Text="{Binding ElementName=stormweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
@@ -206,7 +211,7 @@
             </Label>
             <Label Name="stormweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Stormweaver" /><LineBreak/>
+                    <Run Text="Stormweaver" />
                     <Bold>{<Run Text="{Binding ElementName=stormweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
@@ -232,7 +237,7 @@
             <!--2nd Column-->
             <Label Name="treantHordeLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Treant Horde" />
+                    <Run Text="Treant Horde" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=treantHordeHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
@@ -290,7 +295,7 @@
                     <Bold>{<Run Text="{Binding ElementName=steelInfusedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Name="chaosweaverLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
@@ -417,7 +422,7 @@
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Name="chaosweaverLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
@@ -802,7 +807,7 @@
 
             <Label Name="invulnerableLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Invulnerable" />
+                    <Run Text="Invulnerable" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=invulnerableHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>

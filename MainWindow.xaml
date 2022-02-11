@@ -93,143 +93,143 @@
                 ToolTipText="Archnemesis ACS" 
             />
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
                 Path of Exile Archnemesis Auto Cheat Sheet
             </Label>
 
             <!--1st Column-->
-            <Label Name="toxicLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="toxicLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Toxic" />
                     <Bold>{<Run Text="{Binding ElementName=toxicHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="sentinelLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="sentinelLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Sentinel" />
                     <Bold>{<Run Text="{Binding ElementName=sentinelHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="steelInfusedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="steelInfusedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Steel-Infused" />
                     <Bold>{<Run Text="{Binding ElementName=steelInfusedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="chaosweaverLbl1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="echoistLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="echoistLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Echoist" />
                     <Bold>{<Run Text="{Binding ElementName=echoistHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="bloodletterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bloodletterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bloodletter" />
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="chaosweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="gargantuanLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="gargantuanLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Gargantuan" />
                     <Bold>{<Run Text="{Binding ElementName=gargantuanHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="vampiricLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="vampiricLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Vampiric" />
                     <Bold>{<Run Text="{Binding ElementName=vampiricHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="chaosweaverLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="chaosweaverLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="echoistLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="echoistLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Echoist" />
                     <Bold>{<Run Text="{Binding ElementName=echoistHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="flameweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="flameweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Flameweaver" />
                     <Bold>{<Run Text="{Binding ElementName=flameweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frostweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frostweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frostweaver" />
                     <Bold>{<Run Text="{Binding ElementName=frostweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="stormweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="stormweaverLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Stormweaver" />
                     <Bold>{<Run Text="{Binding ElementName=stormweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="deadeyeLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="deadeyeLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Deadeye" />
                     <Bold>{<Run Text="{Binding ElementName=deadeyeHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="vampiricLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="vampiricLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Vampiric" />
                     <Bold>{<Run Text="{Binding ElementName=vampiricHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="permafrostLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="permafrostLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Permafrost" />
                     <Bold>{<Run Text="{Binding ElementName=permafrostHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="sentinelLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="sentinelLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Sentinel" />
                     <Bold>{<Run Text="{Binding ElementName=sentinelHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="stormweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="stormweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Stormweaver" />
                     <Bold>{<Run Text="{Binding ElementName=stormweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="hastedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="hastedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Hasted" />
                     <Bold>{<Run Text="{Binding ElementName=hastedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="dynamoLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="dynamoLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Dynamo" />
                     <Bold>{<Run Text="{Binding ElementName=dynamoHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="arcaneBufferLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="33" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="arcaneBufferLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="33" Grid.Column="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Arcane Buffer" />
                     <Bold>{<Run Text="{Binding ElementName=arcaneBufferHidden, Path=Content}" />}</Bold>
@@ -237,95 +237,95 @@
             </Label>
 
             <!--2nd Column-->
-            <Label Name="treantHordeLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="treantHordeLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Treant Horde" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=treantHordeHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-            <Label Name="maledictionLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="maledictionLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Malediction" />
                     <Bold>{<Run Text="{Binding ElementName=maledictionHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="corrupterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="corrupterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Corrupter" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=corrupterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="rejuvenatingLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="rejuvenatingLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Rejuvenating" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=rejuvenatingHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="permafrostLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="permafrostLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Permafrost" />
                     <Bold>{<Run Text="{Binding ElementName=permafrostHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="berserkerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="berserkerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Berserker" />
                     <Bold>{<Run Text="{Binding ElementName=berserkerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-            <Label Name="juggernautLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="juggernautLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Juggernaut" />
                     <Bold>{<Run Text="{Binding ElementName=juggernautHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="arcaneBufferLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="arcaneBufferLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Arcane Buffer" />
                     <Bold>{<Run Text="{Binding ElementName=arcaneBufferHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Evocationist" FontSize="14" Grid.Row="19" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-            <Label Name="steelInfusedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Evocationist" FontSize="14" Grid.Row="19" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="steelInfusedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Steel-Infused" />
                     <Bold>{<Run Text="{Binding ElementName=steelInfusedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="chaosweaverLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-            <Label Name="overchargedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="overchargedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="echoistLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="27" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="echoistLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="27" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Echoist" />
                     <Bold>{<Run Text="{Binding ElementName=echoistHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Ice Prison" FontSize="14" Grid.Row="28" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-            <Label Name="stormStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Ice Prison" FontSize="14" Grid.Row="28" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="stormStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Storm Strider" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=stormStriderHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="heraldingMinionsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="heraldingMinionsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Heralding Minions" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=heraldingMinionsHidden, Path=Content}" />}</Bold>
@@ -333,27 +333,27 @@
             </Label>
 
             <!--3rd Column-->
-            <Label Name="effigyLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue">
+            <Label Opacity="0.5" Name="effigyLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Effigy" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=effigyHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="crystalSkinnedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue">
+            <Label Opacity="0.5" Name="crystalSkinnedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Crystal-Skinned" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=crystalSkinnedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-            <Label Name="empoweredElementsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="empoweredElementsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Empowered&#xA;Elements" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=empoweredElementsHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-            <Label Name="brineKingTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="brineKingTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Brine King&#xA;Touched" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=brineKingTouchedHidden, Path=Content}" />}</Bold>
@@ -361,135 +361,135 @@
             </Label>
 
             <!--4th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-            <Label Name="overchargedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="overchargedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="toxicLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="toxicLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Toxic" />
                     <Bold>{<Run Text="{Binding ElementName=toxicHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bloodletterLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bloodletterLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bloodletter" />
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="deadeyeLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="deadeyeLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Deadeye" />
                     <Bold>{<Run Text="{Binding ElementName=deadeyeHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="vampiricLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="vampiricLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Vampiric" />
                     <Bold>{<Run Text="{Binding ElementName=vampiricHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="flameweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="flameweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Flameweaver" />
                     <Bold>{<Run Text="{Binding ElementName=flameweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="hastedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="hastedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Hasted" />
                     <Bold>{<Run Text="{Binding ElementName=hastedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="gargantuanLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="gargantuanLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Gargantuan" />
                     <Bold>{<Run Text="{Binding ElementName=gargantuanHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="vampiricLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="vampiricLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Vampiric" />
                     <Bold>{<Run Text="{Binding ElementName=vampiricHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="bloodletterLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bloodletterLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bloodletter" />
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="chaosweaverLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="chaosweaverLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Chaosweaver" />
                     <Bold>{<Run Text="{Binding ElementName=chaosweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frenziedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frenziedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frenzied" />
                     <Bold>{<Run Text="{Binding ElementName=frenziedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="berserkerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="berserkerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Berserker" />
                     <Bold>{<Run Text="{Binding ElementName=berserkerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="incendiaryLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="incendiaryLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Incendiary" />
                     <Bold>{<Run Text="{Binding ElementName=incendiaryHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bonebreakerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bonebreakerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bonebreaker" />
                     <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-            <Label Name="overchargedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="overchargedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-            <Label Name="overchargedLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="overchargedLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="toxicLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="toxicLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Toxic" />
                     <Bold>{<Run Text="{Binding ElementName=toxicHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bloodletterLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bloodletterLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="30" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bloodletter" />
                     <Bold>{<Run Text="{Binding ElementName=bloodletterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="maledictionLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="maledictionLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Malediction" />
                     <Bold>{<Run Text="{Binding ElementName=maledictionHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="deadeyeLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="deadeyeLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="32" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Deadeye" />
                     <Bold>{<Run Text="{Binding ElementName=deadeyeHidden, Path=Content}" />}</Bold>
@@ -497,109 +497,109 @@
             </Label>
 
             <!--5th Column-->
-            <Label Name="necromancerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="necromancerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Necromancer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="incendiaryLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="incendiaryLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Incendiary" />
                     <Bold>{<Run Text="{Binding ElementName=incendiaryHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="entanglerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="entanglerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Entangler" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=entanglerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
-            <Label Name="flameStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="flameStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Flame Strider" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=flameStriderHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="rejuvenatingLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="rejuvenatingLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Rejuvenating" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=rejuvenatingHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frenziedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frenziedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frenzied" />
                     <Bold>{<Run Text="{Binding ElementName=frenziedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="corrupterLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="corrupterLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Corrupter" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=corrupterHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="executionerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="executionerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Executioner" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=executionerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="magmaBarrierLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="magmaBarrierLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Magma Barrier" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=magmaBarrierHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bonebreakerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bonebreakerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bonebreaker" />
                     <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="necromancerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="necromancerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Necromancer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bonebreakerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bonebreakerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bonebreaker" />
                     <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="necromancerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="necromancerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Necromancer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="soulConduitLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="27" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="soulConduitLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="27" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Soul Conduit" />
                     <Bold>{<Run Text="{Binding ElementName=soulConduitHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="gargantuanLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="gargantuanLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Gargantuan" />
                     <Bold>{<Run Text="{Binding ElementName=gargantuanHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="entanglerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="entanglerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="29" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Entangler" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=entanglerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="droughtBringerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
+            <Label Opacity="0.5" Name="droughtBringerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Droughtbringer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=droughtBringerHidden, Path=Content}" />}</Bold>
@@ -607,13 +607,13 @@
             </Label>
 
             <!--6th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
-            <Label Name="soulEaterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="soulEaterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Soul Eater" /><LineBreak />
                     <Bold>{<Run Text="{Binding ElementName=soulEaterHidden, Path=Content}" />}</Bold>
@@ -621,9 +621,9 @@
             </Label>
 
             <!--7th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
-            <Label Name="shakariTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" Name="shakariTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Shakari-Touched" /><LineBreak />
                     <Bold>{<Run Text="{Binding ElementName=shakariTouchedHidden, Path=Content}" />}</Bold>
@@ -631,125 +631,125 @@
             </Label>
 
             <!--8th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" ></Label>
-            <Label Name="overchargedLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" ></Label>
+            <Label Opacity="0.5" Name="overchargedLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frenziedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frenziedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frenzied" />
                     <Bold>{<Run Text="{Binding ElementName=frenziedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="berserkerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="berserkerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Berserker" />
                     <Bold>{<Run Text="{Binding ElementName=berserkerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="sentinelLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="sentinelLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Sentinel" />
                     <Bold>{<Run Text="{Binding ElementName=sentinelHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="juggernautLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="juggernautLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="9" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Juggernaut" />
                     <Bold>{<Run Text="{Binding ElementName=juggernautHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="consecratorLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="consecratorLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Consecrator" />
                     <Bold>{<Run Text="{Binding ElementName=consecratorHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frostweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frostweaverLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frostweaver" />
                     <Bold>{<Run Text="{Binding ElementName=frostweaverHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="hastedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="hastedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Hasted" />
                     <Bold>{<Run Text="{Binding ElementName=hastedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-            <Label Name="overchargedLbl6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="overchargedLbl6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
                     <Bold>{<Run Text="{Binding ElementName=overchargedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frenziedLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="frenziedLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frenzied" />
                     <Bold>{<Run Text="{Binding ElementName=frenziedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="berserkerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="berserkerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="16" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Berserker" />
                     <Bold>{<Run Text="{Binding ElementName=berserkerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="sentinelLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="sentinelLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Sentinel" />
                     <Bold>{<Run Text="{Binding ElementName=sentinelHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="juggernautLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="juggernautLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Juggernaut" />
                     <Bold>{<Run Text="{Binding ElementName=juggernautHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="consecratorLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="consecratorLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="20" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Consecrator" />
                     <Bold>{<Run Text="{Binding ElementName=consecratorHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="incendiaryLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="incendiaryLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Incendiary" />
                     <Bold>{<Run Text="{Binding ElementName=incendiaryHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="bonebreakerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bonebreakerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bonebreaker" />
                     <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="echoistLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="echoistLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Echoist" />
                     <Bold>{<Run Text="{Binding ElementName=echoistHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="soulConduitLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="soulConduitLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Soul Conduit" />
                     <Bold>{<Run Text="{Binding ElementName=soulConduitHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="consecratorLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="consecratorLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Consecrator" />
                     <Bold>{<Run Text="{Binding ElementName=consecratorHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="dynamoLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="dynamoLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Dynamo" />
                     <Bold>{<Run Text="{Binding ElementName=dynamoHidden, Path=Content}" />}</Bold>
@@ -757,75 +757,75 @@
             </Label>
 
             <!--9th Column-->
-            <Label Name="necromancerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="necromancerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Necromancer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="executionerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="executionerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Executioner" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=executionerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="gargantuanLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="19" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="gargantuanLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="7" Grid.Column="19" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Gargantuan" />
                     <Bold>{<Run Text="{Binding ElementName=gargantuanHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="invulnerableLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="invulnerableLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Invulnerable" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=invulnerableHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="frostStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="frostStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="11" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Frost Strider" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=frostStriderHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="necromancerLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="necromancerLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Necromancer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="executionerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="executionerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Executioner" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=executionerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="gargantuanLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="19" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="gargantuanLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="19" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Gargantuan" />
                     <Bold>{<Run Text="{Binding ElementName=gargantuanHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="invulnerableLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="invulnerableLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Invulnerable" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=invulnerableHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="magmaBarrierLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="magmaBarrierLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Magma Barrier" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=magmaBarrierHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="mirrorImageLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="mirrorImageLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Mirror Image" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=mirrorImageHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Name="manaSiphonerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen">
+            <Label Opacity="0.5" Name="manaSiphonerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Mana Siphoner" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=manaSiphonerHidden, Path=Content}" />}</Bold>
@@ -833,14 +833,14 @@
             </Label>
 
             <!--10th Column-->
-            <Label Name="empoweringMinionsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
+            <Label Opacity="0.5" Name="empoweringMinionsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Empowering Minions" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=empoweringMinionsHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
-            <Label Name="empoweringMinionsLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
+            <Label Opacity="0.5" Name="empoweringMinionsLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Empowering Minions" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=empoweringMinionsHidden, Path=Content}" />}</Bold>
@@ -848,13 +848,13 @@
             </Label>
 
             <!--11th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Lunaris-Touched" FontSize="14" Grid.Row="3" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Lunaris-Touched" FontSize="14" Grid.Row="3" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
 
             <!--12th Column-->
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
 
-            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Orange">
+            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Orange">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Opulent" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=opulentHidden, Path=Content}" />}</Bold>
@@ -884,53 +884,54 @@
                 <fa:ImageAwesome Icon="Refresh" Spin="True" Height="250" Width="250" Foreground="White"/>
             </Grid>
 
-            <Label Name="manaSiphonerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="mirrorImageHidden" Content="0" FontSize="14"></Label>
-            <Label Name="empoweredElementsHidden" Content="0" FontSize="14"></Label>
-            <Label Name="stormStriderHidden" Content="0" FontSize="14"></Label>
-            <Label Name="arcaneBufferHidden" Content="0" FontSize="14"></Label>
-            <Label Name="bloodletterHidden" Content="0" FontSize="14"></Label>
-            <Label Name="bonebreakerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="brineKingTouchedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="corrupterHidden" Content="0" FontSize="14"></Label>
-            <Label Name="droughtBringerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="effigyHidden" Content="0" FontSize="14"></Label>
-            <Label Name="frenziedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="frostStriderHidden" Content="0" FontSize="14"></Label>
-            <Label Name="frostweaverHidden" Content="0" FontSize="14"></Label>
-            <Label Name="incendiaryHidden" Content="0" FontSize="14"></Label>
-            <Label Name="invulnerableHidden" Content="0" FontSize="14"></Label>
-            <Label Name="juggernautHidden" Content="0" FontSize="14"></Label>
-            <Label Name="magmaBarrierHidden" Content="0" FontSize="14"></Label>
-            <Label Name="maledictionHidden" Content="0" FontSize="14"></Label>
-            <Label Name="overchargedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="permafrostHidden" Content="0" FontSize="14"></Label>
-            <Label Name="rejuvenatingHidden" Content="0" FontSize="14"></Label>
-            <Label Name="shakariTouchedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="stormweaverHidden" Content="0" FontSize="14"></Label>
-            <Label Name="crystalSkinnedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="entanglerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="executionerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="necromancerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="gargantuanHidden" Content="0" FontSize="14"></Label>
-            <Label Name="echoistHidden" Content="0" FontSize="14"></Label>
-            <Label Name="flameStriderHidden" Content="0" FontSize="14"></Label>
-            <Label Name="hastedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="heraldingMinionsHidden" Content="0" FontSize="14"></Label>
-            <Label Name="sentinelHidden" Content="0" FontSize="14"></Label>
-            <Label Name="soulEaterHidden" Content="0" FontSize="14"></Label>
-            <Label Name="steelInfusedHidden" Content="0" FontSize="14"></Label>
-            <Label Name="treantHordeHidden" Content="0" FontSize="14"></Label>
-            <Label Name="deadeyeHidden" Content="0" FontSize="14"></Label>
-            <Label Name="berserkerHidden" Content="0" FontSize="14"></Label>
-            <Label Name="chaosweaverHidden" Content="0" FontSize="14"></Label>
-            <Label Name="consecratorHidden" Content="0" FontSize="14"></Label>
-            <Label Name="dynamoHidden" Content="0" FontSize="14"></Label>
-            <Label Name="flameweaverHidden" Content="0" FontSize="14"></Label>
-            <Label Name="soulConduitHidden" Content="0" FontSize="14"></Label>
-            <Label Name="toxicHidden" Content="0" FontSize="14"></Label>
-            <Label Name="vampiricHidden" Content="0" FontSize="14"></Label>
-            <Label Name="empoweringMinionsHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="manaSiphonerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="mirrorImageHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="empoweredElementsHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="stormStriderHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="arcaneBufferHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="bloodletterHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="bonebreakerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="brineKingTouchedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="corrupterHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="droughtBringerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="effigyHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="frenziedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="frostStriderHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="frostweaverHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="incendiaryHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="invulnerableHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="juggernautHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="magmaBarrierHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="maledictionHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="overchargedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="permafrostHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="rejuvenatingHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="shakariTouchedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="stormweaverHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="crystalSkinnedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="entanglerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="executionerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="necromancerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="gargantuanHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="echoistHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="flameStriderHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="hastedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="heraldingMinionsHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="sentinelHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="soulEaterHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="steelInfusedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="treantHordeHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="deadeyeHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="berserkerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="chaosweaverHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="consecratorHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="dynamoHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="flameweaverHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="soulConduitHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="toxicHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="vampiricHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="empoweringMinionsHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>
     </Grid>
 </Window>

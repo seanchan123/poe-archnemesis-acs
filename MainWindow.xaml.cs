@@ -339,188 +339,188 @@ namespace poe_archnemesis_acs
             switch (controlName)
             {
                 case "manaSiphonerHidden":
-                    manaSiphonerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        manaSiphonerLbl1.Opacity = 0.6;
+                        manaSiphonerHidden.Content = totalCount;
+                        manaSiphonerLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "mirrorImageHidden":
-                    mirrorImageHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        mirrorImageLbl1.Opacity = 0.6;
+                        mirrorImageHidden.Content = totalCount;
+                        mirrorImageLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "empoweredElementsHidden":
-                    empoweredElementsHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        empoweredElementsLbl1.Opacity = 0.6;
+                        empoweredElementsHidden.Content = totalCount;
+                        empoweredElementsLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "stormStriderHidden":
-                    stormStriderHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        stormStriderLbl1.Opacity = 0.6;
+                        stormStriderHidden.Content = totalCount;
+                        stormStriderLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "arcaneBufferHidden":
-                    arcaneBufferHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        arcaneBufferLbl1.Opacity = 0.6;
-                        arcaneBufferLbl2.Opacity = 0.6;
+                        arcaneBufferHidden.Content = totalCount;
+                        arcaneBufferLbl1.Opacity = 1.0;
+                        arcaneBufferLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "bloodletterHidden":
-                    bloodletterHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        bloodletterLbl1.Opacity = 0.6;
-                        bloodletterLbl2.Opacity = 0.6;
-                        bloodletterLbl3.Opacity = 0.6;
-                        bloodletterLbl4.Opacity = 0.6;
+                        bloodletterHidden.Content = totalCount;
+                        bloodletterLbl1.Opacity = 1.0;
+                        bloodletterLbl2.Opacity = 1.0;
+                        bloodletterLbl3.Opacity = 1.0;
+                        bloodletterLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "bonebreakerHidden":
-                    bonebreakerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        bonebreakerLbl1.Opacity = 0.6;
-                        bonebreakerLbl2.Opacity = 0.6;
-                        bonebreakerLbl3.Opacity = 0.6;
-                        bonebreakerLbl4.Opacity = 0.6;
+                        bonebreakerHidden.Content = totalCount;
+                        bonebreakerLbl1.Opacity = 1.0;
+                        bonebreakerLbl2.Opacity = 1.0;
+                        bonebreakerLbl3.Opacity = 1.0;
+                        bonebreakerLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "brineKingTouchedHidden":
-                    brineKingTouchedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        brineKingTouchedLbl1.Opacity = 0.6;
+                        brineKingTouchedHidden.Content = totalCount;
+                        brineKingTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "corrupterHidden":
-                    corrupterHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        corrupterLbl1.Opacity = 0.6;
-                        corrupterLbl2.Opacity = 0.6;
+                        corrupterHidden.Content = totalCount;
+                        corrupterLbl1.Opacity = 1.0;
+                        corrupterLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "droughtBringerHidden":
-                    droughtBringerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        droughtBringerLbl1.Opacity = 0.6;
+                        droughtBringerHidden.Content = totalCount;
+                        droughtBringerLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "effigyHidden":
-                    effigyHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        effigyLbl1.Opacity = 0.6;
+                        effigyHidden.Content = totalCount;
+                        effigyLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "frenziedHidden":
-                    frenziedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        frenziedLbl1.Opacity = 0.6;
-                        frenziedLbl2.Opacity = 0.6;
-                        frenziedLbl3.Opacity = 0.6;
-                        frenziedLbl4.Opacity = 0.6;
+                        frenziedHidden.Content = totalCount;
+                        frenziedLbl1.Opacity = 1.0;
+                        frenziedLbl2.Opacity = 1.0;
+                        frenziedLbl3.Opacity = 1.0;
+                        frenziedLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "frostStriderHidden":
-                    frostStriderHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        frostStriderLbl1.Opacity = 0.6;
+                        frostStriderHidden.Content = totalCount;
+                        frostStriderLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "frostweaverHidden":
-                    frostweaverHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        frostweaverLbl1.Opacity = 0.6;
-                        frostweaverLbl2.Opacity = 0.6;
+                        frostweaverHidden.Content = totalCount;
+                        frostweaverLbl1.Opacity = 1.0;
+                        frostweaverLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "incendiaryHidden":
-                    incendiaryHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        incendiaryLbl1.Opacity = 0.6;
-                        incendiaryLbl2.Opacity = 0.6;
-                        incendiaryLbl3.Opacity = 0.6;
+                        incendiaryHidden.Content = totalCount;
+                        incendiaryLbl1.Opacity = 1.0;
+                        incendiaryLbl2.Opacity = 1.0;
+                        incendiaryLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "invulnerableHidden":
-                    invulnerableHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        invulnerableLbl1.Opacity = 0.6;
-                        invulnerableLbl2.Opacity = 0.6;
+                        invulnerableHidden.Content = totalCount;
+                        invulnerableLbl1.Opacity = 1.0;
+                        invulnerableLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "juggernautHidden":
-                    juggernautHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        juggernautLbl1.Opacity = 0.6;
-                        juggernautLbl2.Opacity = 0.6;
-                        juggernautLbl3.Opacity = 0.6;
+                        juggernautHidden.Content = totalCount;
+                        juggernautLbl1.Opacity = 1.0;
+                        juggernautLbl2.Opacity = 1.0;
+                        juggernautLbl3.Opacity = 1.0;
                     }
 
                     break;
@@ -530,165 +530,161 @@ namespace poe_archnemesis_acs
                     if (totalCount != 0)
                     {
                         magmaBarrierHidden.Content = totalCount;
-                    }
-
-                    if (int.Parse(magmaBarrierHidden.Content.ToString()) == 0)
-                    {
-                        magmaBarrierLbl1.Opacity = 0.6;
-                        magmaBarrierLbl2.Opacity = 0.6;
+                        magmaBarrierLbl1.Opacity = 1.0;
+                        magmaBarrierLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "maledictionHidden":
-                    maledictionHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        maledictionLbl1.Opacity = 0.6;
-                        maledictionLbl2.Opacity = 0.6;
+                        maledictionHidden.Content = totalCount;
+                        maledictionLbl1.Opacity = 1.0;
+                        maledictionLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "overchargedHidden":
-                    overchargedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        overchargedLbl1.Opacity = 0.6;
-                        overchargedLbl2.Opacity = 0.6;
-                        overchargedLbl3.Opacity = 0.6;
-                        overchargedLbl4.Opacity = 0.6;
-                        overchargedLbl5.Opacity = 0.6;
-                        overchargedLbl6.Opacity = 0.6;
+                        overchargedHidden.Content = totalCount;
+                        overchargedLbl1.Opacity = 1.0;
+                        overchargedLbl2.Opacity = 1.0;
+                        overchargedLbl3.Opacity = 1.0;
+                        overchargedLbl4.Opacity = 1.0;
+                        overchargedLbl5.Opacity = 1.0;
+                        overchargedLbl6.Opacity = 1.0;
                     }
 
                     break;
 
                 case "permafrostHidden":
-                    permafrostHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        permafrostLbl1.Opacity = 0.6;
-                        permafrostLbl2.Opacity = 0.6;
+                        permafrostHidden.Content = totalCount;
+                        permafrostLbl1.Opacity = 1.0;
+                        permafrostLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "rejuvenatingHidden":
-                    rejuvenatingHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        rejuvenatingLbl1.Opacity = 0.6;
-                        rejuvenatingLbl2.Opacity = 0.6;
+                        rejuvenatingHidden.Content = totalCount;
+                        rejuvenatingLbl1.Opacity = 1.0;
+                        rejuvenatingLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "shakariTouchedHidden":
-                    shakariTouchedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        shakariTouchedLbl1.Opacity = 0.6;
+                        shakariTouchedHidden.Content = totalCount;
+                        shakariTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "stormweaverHidden":
-                    stormweaverHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        stormweaverLbl1.Opacity = 0.6;
-                        stormweaverLbl2.Opacity = 0.6;
+                        stormweaverHidden.Content = totalCount;
+                        stormweaverLbl1.Opacity = 1.0;
+                        stormweaverLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "crystalSkinnedHidden":
-                    crystalSkinnedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        crystalSkinnedLbl1.Opacity = 0.6;
+                        crystalSkinnedHidden.Content = totalCount;
+                        crystalSkinnedLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "entanglerHidden":
-                    entanglerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        entanglerLbl1.Opacity = 0.6;
-                        entanglerLbl2.Opacity = 0.6;
+                        entanglerHidden.Content = totalCount;
+                        entanglerLbl1.Opacity = 1.0;
+                        entanglerLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "executionerHidden":
-                    executionerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        executionerLbl1.Opacity = 0.6;
-                        executionerLbl2.Opacity = 0.6;
-                        executionerLbl3.Opacity = 0.6;
+                        executionerHidden.Content = totalCount;
+                        executionerLbl1.Opacity = 1.0;
+                        executionerLbl2.Opacity = 1.0;
+                        executionerLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "necromancerHidden":
-                    shakariTouchedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        necromancerLbl1.Opacity = 0.6;
-                        necromancerLbl2.Opacity = 0.6;
-                        necromancerLbl3.Opacity = 0.6;
-                        necromancerLbl4.Opacity = 0.6;
-                        necromancerLbl5.Opacity = 0.6;
+                        shakariTouchedHidden.Content = totalCount;
+                        necromancerLbl1.Opacity = 1.0;
+                        necromancerLbl2.Opacity = 1.0;
+                        necromancerLbl3.Opacity = 1.0;
+                        necromancerLbl4.Opacity = 1.0;
+                        necromancerLbl5.Opacity = 1.0;
                     }
 
                     break;
 
                 case "gargantuanHidden":
-                    gargantuanHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        gargantuanLbl1.Opacity = 0.6;
-                        gargantuanLbl2.Opacity = 0.6;
-                        gargantuanLbl3.Opacity = 0.6;
-                        gargantuanLbl4.Opacity = 0.6;
-                        gargantuanLbl5.Opacity = 0.6;
+                        gargantuanHidden.Content = totalCount;
+                        gargantuanLbl1.Opacity = 1.0;
+                        gargantuanLbl2.Opacity = 1.0;
+                        gargantuanLbl3.Opacity = 1.0;
+                        gargantuanLbl4.Opacity = 1.0;
+                        gargantuanLbl5.Opacity = 1.0;
                     }
 
                     break;
 
                 case "echoistHidden":
-                    echoistHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        echoistLbl1.Opacity = 0.6;
-                        echoistLbl2.Opacity = 0.6;
-                        echoistLbl3.Opacity = 0.6;
-                        echoistLbl4.Opacity = 0.6;
+                        echoistHidden.Content = totalCount;
+                        echoistLbl1.Opacity = 1.0;
+                        echoistLbl2.Opacity = 1.0;
+                        echoistLbl3.Opacity = 1.0;
+                        echoistLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "flameStriderHidden":
-                    flameStriderHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        flameStriderLbl1.Opacity = 0.6;
+                        flameStriderHidden.Content = totalCount;
+                        flameStriderLbl1.Opacity = 1.0;
                     }
 
                     break;
@@ -698,187 +694,183 @@ namespace poe_archnemesis_acs
                     if (totalCount != 0)
                     {
                         hastedHidden.Content = totalCount;
-                    }
-
-                    if (int.Parse(hastedHidden.Content.ToString()) == 0)
-                    {
-                        hastedLbl1.Opacity = 0.6;
-                        hastedLbl2.Opacity = 0.6;
-                        hastedLbl3.Opacity = 0.6;
+                        hastedLbl1.Opacity = 1.0;
+                        hastedLbl2.Opacity = 1.0;
+                        hastedLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "heraldingMinionsHidden":
-                    heraldingMinionsHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        heraldingMinionsLbl1.Opacity = 0.6;
+                        heraldingMinionsHidden.Content = totalCount;
+                        heraldingMinionsLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "sentinelHidden":
-                    sentinelHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        sentinelLbl1.Opacity = 0.6;
-                        sentinelLbl2.Opacity = 0.6;
-                        sentinelLbl3.Opacity = 0.6;
-                        sentinelLbl4.Opacity = 0.6;
+                        sentinelHidden.Content = totalCount;
+                        sentinelLbl1.Opacity = 1.0;
+                        sentinelLbl2.Opacity = 1.0;
+                        sentinelLbl3.Opacity = 1.0;
+                        sentinelLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "soulEaterHidden":
-                    soulEaterHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        soulEaterLbl1.Opacity = 0.6;
+                        soulEaterHidden.Content = totalCount;
+                        soulEaterLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "steelInfusedHidden":
-                    steelInfusedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        steelInfusedLbl1.Opacity = 0.6;
-                        steelInfusedLbl2.Opacity = 0.6;
+                        steelInfusedHidden.Content = totalCount;
+                        steelInfusedLbl1.Opacity = 1.0;
+                        steelInfusedLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "treantHordeHidden":
-                    treantHordeHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        treantHordeLbl1.Opacity = 0.6;
+                        treantHordeHidden.Content = totalCount;
+                        treantHordeLbl1.Opacity = 1.0;
                     }
 
                     break;
 
                 case "deadeyeHidden":
-                    deadeyeHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        deadeyeLbl1.Opacity = 0.6;
-                        deadeyeLbl2.Opacity = 0.6;
-                        deadeyeLbl3.Opacity = 0.6;
+                        deadeyeHidden.Content = totalCount;
+                        deadeyeLbl1.Opacity = 1.0;
+                        deadeyeLbl2.Opacity = 1.0;
+                        deadeyeLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "berserkerHidden":
-                    berserkerHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        berserkerLbl1.Opacity = 0.6;
-                        berserkerLbl2.Opacity = 0.6;
-                        berserkerLbl3.Opacity = 0.6;
-                        berserkerLbl4.Opacity = 0.6;
+                        berserkerHidden.Content = totalCount;
+                        berserkerLbl1.Opacity = 1.0;
+                        berserkerLbl2.Opacity = 1.0;
+                        berserkerLbl3.Opacity = 1.0;
+                        berserkerLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "chaosweaverHidden":
-                    chaosweaverHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        chaosweaverLbl1.Opacity = 0.6;
-                        chaosweaverLbl2.Opacity = 0.6;
-                        chaosweaverLbl3.Opacity = 0.6;
-                        chaosweaverLbl4.Opacity = 0.6;
-                        chaosweaverLbl5.Opacity = 0.6;
+                        chaosweaverHidden.Content = totalCount;
+                        chaosweaverLbl1.Opacity = 1.0;
+                        chaosweaverLbl2.Opacity = 1.0;
+                        chaosweaverLbl3.Opacity = 1.0;
+                        chaosweaverLbl4.Opacity = 1.0;
+                        chaosweaverLbl5.Opacity = 1.0;
                     }
 
                     break;
 
                 case "consecratorHidden":
-                    consecratorHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        consecratorLbl1.Opacity = 0.6;
-                        consecratorLbl2.Opacity = 0.6;
-                        consecratorLbl3.Opacity = 0.6;
+                        consecratorHidden.Content = totalCount;
+                        consecratorLbl1.Opacity = 1.0;
+                        consecratorLbl2.Opacity = 1.0;
+                        consecratorLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "dynamoHidden":
-                    dynamoHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        dynamoLbl1.Opacity = 0.6;
-                        dynamoLbl2.Opacity = 0.6;
+                        dynamoHidden.Content = totalCount;
+                        dynamoLbl1.Opacity = 1.0;
+                        dynamoLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "flameweaverHidden":
-                    flameweaverHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        flameweaverLbl1.Opacity = 0.6;
-                        flameweaverLbl2.Opacity = 0.6;
+                        flameweaverHidden.Content = totalCount;
+                        flameweaverLbl1.Opacity = 1.0;
+                        flameweaverLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "soulConduitHidden":
-                    soulConduitHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        soulConduitLbl1.Opacity = 0.6;
-                        soulConduitLbl2.Opacity = 0.6;
+                        soulConduitHidden.Content = totalCount;
+                        soulConduitLbl1.Opacity = 1.0;
+                        soulConduitLbl2.Opacity = 1.0;
                     }
 
                     break;
 
                 case "toxicHidden":
-                    toxicHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        toxicLbl1.Opacity = 0.6;
-                        toxicLbl2.Opacity = 0.6;
-                        toxicLbl3.Opacity = 0.6;
+                        toxicHidden.Content = totalCount;
+                        toxicLbl1.Opacity = 1.0;
+                        toxicLbl2.Opacity = 1.0;
+                        toxicLbl3.Opacity = 1.0;
                     }
 
                     break;
 
                 case "vampiricHidden":
-                    vampiricHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        vampiricLbl1.Opacity = 0.6;
-                        vampiricLbl2.Opacity = 0.6;
-                        vampiricLbl3.Opacity = 0.6;
-                        vampiricLbl4.Opacity = 0.6;
+                        vampiricHidden.Content = totalCount;
+                        vampiricLbl1.Opacity = 1.0;
+                        vampiricLbl2.Opacity = 1.0;
+                        vampiricLbl3.Opacity = 1.0;
+                        vampiricLbl4.Opacity = 1.0;
                     }
 
                     break;
 
                 case "empoweringMinionsHidden":
-                    empoweringMinionsHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
                     {
-                        empoweringMinionsLbl1.Opacity = 0.6;
-                        empoweringMinionsLbl2.Opacity = 0.6;
+                        empoweringMinionsHidden.Content = totalCount;
+                        empoweringMinionsLbl1.Opacity = 1.0;
+                        empoweringMinionsLbl2.Opacity = 1.0;
                     }
 
                     break;

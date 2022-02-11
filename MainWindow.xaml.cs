@@ -20,6 +20,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Threading;
+using System.Diagnostics;
 
 namespace poe_archnemesis_acs
 {
@@ -57,8 +59,8 @@ namespace poe_archnemesis_acs
         private const uint MOD_WIN = 0x0008; //WINDOWS
         //TILDE (~):
         private const uint VK_OEM_3 = 0xC0;
-        //CAPS LOCK
-        private const uint VK_CAPITAL = 0x14;
+        //A KEY
+        private const uint VK_AKEY = 0x41;
 
         const int WM_HOTKEY = 0x0312;
 
@@ -73,7 +75,7 @@ namespace poe_archnemesis_acs
             _source = HwndSource.FromHwnd(_windowHandle);
             _source.AddHook(HwndHook);
 
-            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_CAPITAL); //LSHIFT + CAPS
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_AKEY); //LSHIFT + CAPS
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -85,7 +87,7 @@ namespace poe_archnemesis_acs
                     {
                         case HOTKEY_ID:
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
-                            if (vkey == VK_CAPITAL)
+                            if (vkey == VK_AKEY)
                             {
                                 if (this.ShowActivated == false)
                                 {
@@ -94,12 +96,12 @@ namespace poe_archnemesis_acs
                                     loadingGrid.Opacity = 1;
                                     Screenshot();
 
-                                    //For startup
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
 
                                     MatchImage();
+
                                     cheatsheetGrid.Opacity = 1;
                                     loadingGrid.Opacity = 0;
                                     modSearchTextBox.Focus();
@@ -112,10 +114,10 @@ namespace poe_archnemesis_acs
                                         cheatsheetGrid.Opacity = 0;
                                         loadingGrid.Opacity = 1;
                                         Screenshot();
-
                                         this.Show();
 
                                         MatchImage();
+
                                         cheatsheetGrid.Opacity = 1;
                                         loadingGrid.Opacity = 0;
                                         modSearchTextBox.Focus();
@@ -177,6 +179,7 @@ namespace poe_archnemesis_acs
             modNames.Add("echoist");
             modNames.Add("flame-strider");
             modNames.Add("hasted");
+            modNames.Add("hasted-2");
             modNames.Add("heralding-minions");
             modNames.Add("sentinel");
             modNames.Add("soul-eater");
@@ -191,6 +194,7 @@ namespace poe_archnemesis_acs
             modNames.Add("soul-conduit");
             modNames.Add("toxic");
             modNames.Add("vampiric");
+            modNames.Add("empowering-minions");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -236,6 +240,9 @@ namespace poe_archnemesis_acs
 
                 archnemesisMods.Add(archnemesisMod);
             }
+
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
 
             using (Mat screenshot = new Mat("..\\..\\Resources\\Capture.jpg"))
             //using (Mat screenshot = new Mat("..\\..\\Resources\\Test1.png"))
@@ -285,22 +292,13 @@ namespace poe_archnemesis_acs
                     BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                List<int> checkMods = new List<int>();
-                int total = 0;
-
-                foreach (ArchnemesisModModel ac in archnemesisMods)
-                {
-                    checkMods.Add(ac.Count);
-                    total += ac.Count;
-                }
-
-                checkMods = checkMods;
-
                 //Cv2.ImShow("Matches", screenshot);
                 //Cv2.WaitKey();
             }
 
+            stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
+            //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
         }
 
         private void Screenshot()
@@ -336,13 +334,13 @@ namespace poe_archnemesis_acs
 
         #region Cheatsheet View Methods
 
-        public void BindModToHidden (string controlName, int totalCount)
+        public void BindModToHidden(string controlName, int totalCount)
         {
             switch (controlName)
             {
                 case "manaSiphonerHidden":
                     manaSiphonerHidden.Content = totalCount;
-                    
+
                     if (totalCount == 0)
                     {
                         manaSiphonerLbl1.Opacity = 0.6;
@@ -528,9 +526,13 @@ namespace poe_archnemesis_acs
                     break;
 
                 case "magmaBarrierHidden":
-                    magmaBarrierHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
+                    {
+                        magmaBarrierHidden.Content = totalCount;
+                    }
+
+                    if (int.Parse(magmaBarrierHidden.Content.ToString()) == 0)
                     {
                         magmaBarrierLbl1.Opacity = 0.6;
                         magmaBarrierLbl2.Opacity = 0.6;
@@ -692,9 +694,13 @@ namespace poe_archnemesis_acs
                     break;
 
                 case "hastedHidden":
-                    hastedHidden.Content = totalCount;
 
-                    if (totalCount == 0)
+                    if (totalCount != 0)
+                    {
+                        hastedHidden.Content = totalCount;
+                    }
+
+                    if (int.Parse(hastedHidden.Content.ToString()) == 0)
                     {
                         hastedLbl1.Opacity = 0.6;
                         hastedLbl2.Opacity = 0.6;
@@ -830,7 +836,7 @@ namespace poe_archnemesis_acs
 
                     break;
 
-                case "soulConduitHIdden":
+                case "soulConduitHidden":
                     soulConduitHidden.Content = totalCount;
 
                     if (totalCount == 0)
@@ -865,6 +871,17 @@ namespace poe_archnemesis_acs
                     }
 
                     break;
+
+                case "empoweringMinionsHidden":
+                    empoweringMinionsHidden.Content = totalCount;
+
+                    if (totalCount == 0)
+                    {
+                        empoweringMinionsLbl1.Opacity = 0.6;
+                        empoweringMinionsLbl2.Opacity = 0.6;
+                    }
+
+                    break;
             }
 
         }
@@ -873,7 +890,7 @@ namespace poe_archnemesis_acs
 
         #region Other Methods
 
-        public string FindControlName (string modName)
+        public string FindControlName(string modName)
         {
             string controlName = modName;
             StringBuilder controlNameSB = new StringBuilder(modName);

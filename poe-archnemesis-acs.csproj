@@ -204,5 +204,11 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\magma-barrier-2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\empowering-minions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\hasted-2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

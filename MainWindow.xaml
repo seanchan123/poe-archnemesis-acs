@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:tb="http://www.hardcodet.net/taskbar"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
         AllowsTransparency="True"
         WindowStyle="None"
@@ -868,7 +869,9 @@
 
         </Grid>
         <Grid>
-            <Label Name="loadLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Loading" FontSize="14" Background="DeepPink" Width="1000" Height="430" Opacity="0"></Label>
+            <Grid Name="loadingGrid" Margin="20">
+                <fa:ImageAwesome Icon="Refresh" Spin="True" Height="250" Width="250" Foreground="White"/>
+            </Grid>
 
             <Label Name="manaSiphonerHidden" Content="0" FontSize="14"></Label>
             <Label Name="mirrorImageHidden" Content="0" FontSize="14"></Label>

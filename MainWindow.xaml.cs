@@ -91,7 +91,7 @@ namespace poe_archnemesis_acs
                                 {
                                     this.Topmost = true;
                                     cheatsheetGrid.Opacity = 0;
-                                    loadLabel.Opacity = 1;
+                                    loadingGrid.Opacity = 1;
                                     Screenshot();
 
                                     //For startup
@@ -101,7 +101,7 @@ namespace poe_archnemesis_acs
 
                                     MatchImage();
                                     cheatsheetGrid.Opacity = 1;
-                                    loadLabel.Opacity = 0;
+                                    loadingGrid.Opacity = 0;
                                     modSearchTextBox.Focus();
                                 }
                                 else
@@ -110,14 +110,14 @@ namespace poe_archnemesis_acs
                                     {
                                         this.Topmost = true;
                                         cheatsheetGrid.Opacity = 0;
-                                        loadLabel.Opacity = 1;
+                                        loadingGrid.Opacity = 1;
                                         Screenshot();
 
                                         this.Show();
 
                                         MatchImage();
                                         cheatsheetGrid.Opacity = 1;
-                                        loadLabel.Opacity = 0;
+                                        loadingGrid.Opacity = 0;
                                         modSearchTextBox.Focus();
                                     }
                                     else

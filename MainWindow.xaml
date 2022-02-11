@@ -16,263 +16,301 @@
         <SolidColorBrush Opacity="0.5" Color="Black" />
     </Window.Background>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <tb:TaskbarIcon
+        <Grid Name="cheatsheetGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <tb:TaskbarIcon
             Name="acsTaskbar"
             IconSource="/Resources/Icon.ico"
             ToolTipText="Archnemesis ACS" />
 
-        <!--1st Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Steel-Infused" FontSize="14" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
+                Path of Exile Archnemesis Auto Cheat Sheet
+            </Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--1st Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Steel-Infused" FontSize="14" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flameweaver" FontSize="14" Grid.Row="19" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frostweaver" FontSize="14" Grid.Row="20" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Stormweaver" FontSize="14" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="16" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="24" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="25" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flameweaver" FontSize="14" Grid.Row="19" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frostweaver" FontSize="14" Grid.Row="20" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Stormweaver" FontSize="14" Grid.Row="21" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Permafrost" FontSize="14" Grid.Row="28" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="29" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Stormweaver" FontSize="14" Grid.Row="30" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="31" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Dynamo" FontSize="14" Grid.Row="32" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arcane Buffer" FontSize="14" Grid.Row="33" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="24" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="25" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--2nd Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Treant Horde" FontSize="14" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Malediction" FontSize="14" Grid.Row="8" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Permafrost" FontSize="14" Grid.Row="28" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="29" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Stormweaver" FontSize="14" Grid.Row="30" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="31" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Dynamo" FontSize="14" Grid.Row="32" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arcane Buffer" FontSize="14" Grid.Row="33" Grid.Column="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corrupter" FontSize="14" Grid.Row="9" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Rejuvenating" FontSize="14" Grid.Row="11" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Permafrost" FontSize="14" Grid.Row="13" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="14" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--2nd Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Treant Horde" FontSize="14" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Malediction" FontSize="14" Grid.Row="8" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="17" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arcane Buffer" FontSize="14" Grid.Row="18" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corrupter" FontSize="14" Grid.Row="9" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Rejuvenating" FontSize="14" Grid.Row="11" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Permafrost" FontSize="14" Grid.Row="13" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="14" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Evocationist" FontSize="14" Grid.Row="19" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Steel-Infused" FontSize="14" Grid.Row="22" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="17" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arcane Buffer" FontSize="14" Grid.Row="18" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="26" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="27" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Evocationist" FontSize="14" Grid.Row="19" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Steel-Infused" FontSize="14" Grid.Row="22" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="23" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Ice Prison" FontSize="14" Grid.Row="28" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Storm Rider" FontSize="14" Grid.Row="30" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Heralding Minions" FontSize="14" Grid.Row="32" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="26" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="27" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--3rd Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Effigy" FontSize="14" Grid.Row="6" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Crystal-Skinned" FontSize="14" Grid.Row="11" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowered&#xA;  Elements" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Brine King-touched" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Ice Prison" FontSize="14" Grid.Row="28" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Storm Rider" FontSize="14" Grid.Row="30" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Heralding Minions" FontSize="14" Grid.Row="32" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
 
-        <!--4th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--3rd Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Effigy" FontSize="14" Grid.Row="6" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Crystal-Skinned" FontSize="14" Grid.Row="11" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowered&#xA;  Elements" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Brine King-touched" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flameweaver" FontSize="14" Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--4th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="17" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="20" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="7" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flameweaver" FontSize="14" Grid.Row="10" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="11" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="12" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Vampiric" FontSize="14" Grid.Row="13" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="15" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Chaosweaver" FontSize="14" Grid.Row="16" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="17" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="18" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="19" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="20" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="29" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="30" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Malediction" FontSize="14" Grid.Row="31" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="32" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--5th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Toxic" FontSize="14" Grid.Row="29" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bloodletter" FontSize="14" Grid.Row="30" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Malediction" FontSize="14" Grid.Row="31" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Deadeye" FontSize="14" Grid.Row="32" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Entangler" FontSize="14" Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flame Strider" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Rejuvenating" FontSize="14" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="14" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--5th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corrupter" FontSize="14" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="17" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Magma Barrier" FontSize="14" Grid.Row="19" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="21" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Entangler" FontSize="14" Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Flame Strider" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Rejuvenating" FontSize="14" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="14" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="22" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corrupter" FontSize="14" Grid.Row="15" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="17" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Magma Barrier" FontSize="14" Grid.Row="19" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="21" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="25" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Conduit" FontSize="14" Grid.Row="27" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="28" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="22" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Entangler" FontSize="14" Grid.Row="29" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Drought Bringer" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="25" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Conduit" FontSize="14" Grid.Row="27" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="28" Grid.Column="10" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--6th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Entangler" FontSize="14" Grid.Row="29" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Drought Bringer" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <!--6th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Eater" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
 
-        <!--7th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Shakari-Touched" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Eater" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue"></Label>
 
-        <!--8th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" ></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--7th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Shakari-Touched" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="8" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="9" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="10" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frostweaver" FontSize="14" Grid.Row="11" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="15" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="16" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--8th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" ></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="5" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="6" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="20" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="23" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Conduit" FontSize="14" Grid.Row="24" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="25" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Dynamo" FontSize="14" Grid.Row="26" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="8" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="9" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="10" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frostweaver" FontSize="14" Grid.Row="11" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hasted" FontSize="14" Grid.Row="12" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Overcharged" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frenzied" FontSize="14" Grid.Row="15" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Berserker" FontSize="14" Grid.Row="16" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--9th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="7" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Sentinel" FontSize="14" Grid.Row="18" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Juggernaut" FontSize="14" Grid.Row="19" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="20" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Incendiary" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bonebreaker" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Echoist" FontSize="14" Grid.Row="23" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Soul Conduit" FontSize="14" Grid.Row="24" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Consecrator" FontSize="14" Grid.Row="25" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Dynamo" FontSize="14" Grid.Row="26" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Invulnerable" FontSize="14" Grid.Row="8" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frost Strider" FontSize="14" Grid.Row="11" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="17" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Label>
+            <!--9th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="3" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="5" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="7" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Invulnerable" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Magma Barrier" FontSize="14" Grid.Row="21" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Mirror Image" FontSize="14" Grid.Row="23" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Mana Siphoner" FontSize="14" Grid.Row="25" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Invulnerable" FontSize="14" Grid.Row="8" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Frost Strider" FontSize="14" Grid.Row="11" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Necromancer" FontSize="14" Grid.Row="13" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Executioner" FontSize="14" Grid.Row="15" Grid.Column="19" Grid.ColumnSpan="2" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Gargantuan" FontSize="14" Grid.Row="17" Grid.Column="19" Grid.ColumnSpan="2" Background="White"></Label>
 
-        <!--10th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowering Minions" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Invulnerable" FontSize="14" Grid.Row="18" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="3"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Magma Barrier" FontSize="14" Grid.Row="21" Grid.Column="19" Grid.ColumnSpan="4" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Mirror Image" FontSize="14" Grid.Row="23" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen"></Label>
+            <Label Name="manaSiphonerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="19" Grid.ColumnSpan="6" Grid.RowSpan="2"  Background="SpringGreen">
+                <TextBlock TextAlignment="Center">
+                <Run Text="Mana Siphoner" /><LineBreak/>
+                <Bold>{<Run Text="{Binding ElementName=manaSiphonerHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
 
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowering Minions" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+            <!--10th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowering Minions" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
 
-        <!--11th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Lunaris-Touched" FontSize="14" Grid.Row="3" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
-        
-        <!--12th Column-->
-        <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Empowering Minions" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
+
+            <!--11th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Lunaris-Touched" FontSize="14" Grid.Row="3" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
+
+            <!--12th Column-->
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
+
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Orange">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Opulent" /><LineBreak/>
+                    <Bold>{<Run Text="{Binding ElementName=opulentHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
+
+            <TextBox x:Name="modSearchTextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="3" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Transparent" />
+            <!--<TextBlock IsHitTestVisible="False" Text="Enter Search Term Here" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="25,0,0,0" Foreground="White" Grid.Row="31" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" FontSize="14">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=modSearchTextBox}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>-->
+
+        </Grid>
+        <Grid>
+            <Label Name="loadLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Loading" FontSize="14" Background="DeepPink" Width="1000" Height="430" Opacity="0"></Label>
+
+            <Label Name="manaSiphonerHidden" Content="0" FontSize="14"></Label>
+        </Grid>
     </Grid>
 </Window>

@@ -18,6 +18,8 @@ using MessageBox = System.Windows.MessageBox;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace poe_archnemesis_acs
 {
@@ -87,20 +89,34 @@ namespace poe_archnemesis_acs
                             {
                                 if (this.ShowActivated == false)
                                 {
+                                    this.Topmost = true;
+                                    cheatsheetGrid.Opacity = 0;
+                                    loadLabel.Opacity = 1;
+                                    Screenshot();
+
                                     //For startup
-                                    //Screenshot();
-                                    //MatchImage();
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
+
+                                    MatchImage();
+                                    cheatsheetGrid.Opacity = 1;
+                                    loadLabel.Opacity = 0;
                                 }
                                 else
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
-                                        //Screenshot();
-                                        //MatchImage();
+                                        this.Topmost = true;
+                                        cheatsheetGrid.Opacity = 0;
+                                        loadLabel.Opacity = 1;
+                                        Screenshot();
+
                                         this.Show();
+
+                                        MatchImage();
+                                        cheatsheetGrid.Opacity = 1;
+                                        loadLabel.Opacity = 0;
                                     }
                                     else
                                     {
@@ -207,6 +223,7 @@ namespace poe_archnemesis_acs
                 ArchnemesisModModel archnemesisMod = new ArchnemesisModModel();
                 archnemesisMod.Name = modName;
                 archnemesisMod.ImageSource = "..\\..\\Resources\\Mods\\" + modName + ".png";
+                archnemesisMod.ControlName = FindControlName(modName);
                 archnemesisMod.Count = 0;
 
                 archnemesisMods.Add(archnemesisMod);
@@ -256,21 +273,23 @@ namespace poe_archnemesis_acs
                                 break;
                         }
                     }
+
+                    BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                //List<int> checkMods = new List<int>();
-                //int total = 0;
+                List<int> checkMods = new List<int>();
+                int total = 0;
 
-                //foreach(ArchnemesisModModel ac in archnemesisMods)
-                //{
-                //    checkMods.Add(ac.Count);
-                //    total += ac.Count;
-                //}
+                foreach (ArchnemesisModModel ac in archnemesisMods)
+                {
+                    checkMods.Add(ac.Count);
+                    total += ac.Count;
+                }
 
-                //checkMods = checkMods;
+                checkMods = checkMods;
 
-                Cv2.ImShow("Matches", screenshot);
-                Cv2.WaitKey();
+                //Cv2.ImShow("Matches", screenshot);
+                //Cv2.WaitKey();
             }
 
             File.Delete("..\\..\\Resources\\Capture.jpg");
@@ -304,6 +323,70 @@ namespace poe_archnemesis_acs
             }
 
         }
+        #endregion
+
+
+        #region Cheatsheet View Methods
+
+        public void BindModToHidden (string controlName, int totalCount)
+        {
+            switch (controlName)
+            {
+                case "manaSiphonerHidden":
+                    manaSiphonerHidden.Content = totalCount;
+                    
+                    if (totalCount == 0)
+                    {
+                        manaSiphonerLbl1.Opacity = 0.6;
+                    }
+
+                    break;
+            }
+
+        }
+
+        #endregion
+
+        #region Other Methods
+
+        public string FindControlName (string modName)
+        {
+            string controlName = modName;
+            StringBuilder controlNameSB = new StringBuilder(modName);
+
+            if (modName.Contains("-"))
+            {
+                foreach (int index in AllIndexesOf(controlName, "-"))
+                {
+                    if (Char.IsLetter(modName[index + 1]))
+                    {
+                        controlNameSB[index] = ' ';
+                        controlNameSB[index + 1] = char.Parse(modName[index + 1].ToString().ToUpper());
+                    }
+                    else if (Char.IsDigit(modName[index + 1]))
+                    {
+                        controlNameSB[index] = ' ';
+                        controlNameSB[index + 1] = ' ';
+                    }
+                }
+            }
+
+            controlName = Regex.Replace(controlNameSB.ToString(), @"\s", "");
+            controlName += "Hidden";
+
+            return controlName;
+        }
+
+        public IEnumerable<int> AllIndexesOf(string str, string searchstring)
+        {
+            int minIndex = str.IndexOf(searchstring);
+            while (minIndex != -1)
+            {
+                yield return minIndex;
+                minIndex = str.IndexOf(searchstring, minIndex + searchstring.Length);
+            }
+        }
+
         #endregion
     }
 }

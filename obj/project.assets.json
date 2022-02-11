@@ -140,6 +140,15 @@
           }
         }
       },
+      "FontAwesome.WPF/4.7.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        }
+      },
       "Hardcodet.NotifyIcon.Wpf/1.1.0": {
         "type": "package",
         "compile": {
@@ -412,6 +421,15 @@
       "Emgu.runtime.windows.msvc.rt.x86/19.29.30138": {
         "type": "package"
       },
+      "FontAwesome.WPF/4.7.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        }
+      },
       "Hardcodet.NotifyIcon.Wpf/1.1.0": {
         "type": "package",
         "compile": {
@@ -669,6 +687,15 @@
       },
       "Emgu.runtime.windows.msvc.rt.x86/19.29.30138": {
         "type": "package"
+      },
+      "FontAwesome.WPF/4.7.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        }
       },
       "Hardcodet.NotifyIcon.Wpf/1.1.0": {
         "type": "package",
@@ -929,6 +956,15 @@
           "runtimes/win-x86/native/msvcp140_atomic_wait.dll": {},
           "runtimes/win-x86/native/msvcp140_codecvt_ids.dll": {},
           "runtimes/win-x86/native/vcruntime140.dll": {}
+        }
+      },
+      "FontAwesome.WPF/4.7.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FontAwesome.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FontAwesome.WPF.dll": {}
         }
       },
       "Hardcodet.NotifyIcon.Wpf/1.1.0": {
@@ -1233,6 +1269,29 @@
         "runtimes/win-x86/native/msvcp140_atomic_wait.dll",
         "runtimes/win-x86/native/msvcp140_codecvt_ids.dll",
         "runtimes/win-x86/native/vcruntime140.dll"
+      ]
+    },
+    "FontAwesome.WPF/4.7.0.9": {
+      "sha512": "SXE080rnyWMm9Dt0BZzMxh89/o9teuSaqL1N+0O/XM/F/HU8JuZA4XaEKxjBigwZPHHU3/udTa0QMYCHkmH43Q==",
+      "type": "package",
+      "path": "fontawesome.wpf/4.7.0.9",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.wpf.4.7.0.9.nupkg.sha512",
+        "fontawesome.wpf.nuspec",
+        "lib/net35/FontAwesome.WPF.dll",
+        "lib/net35/FontAwesome.WPF.xml",
+        "lib/net40/FontAwesome.WPF.dll",
+        "lib/net40/FontAwesome.WPF.xml",
+        "lib/uap10.0/FontAwesome.UWP.XML",
+        "lib/uap10.0/FontAwesome.UWP.dll",
+        "lib/uap10.0/FontAwesome.UWP.pri",
+        "lib/uap10.0/FontAwesome.UWP/FontAwesome.otf",
+        "lib/wp81/FontAwesome.WIN81.dll",
+        "lib/wp81/FontAwesome.WIN81.xml",
+        "tools/install.ps1"
       ]
     },
     "Hardcodet.NotifyIcon.Wpf/1.1.0": {
@@ -1664,6 +1723,7 @@
       "Emgu.CV.Bitmap >= 4.5.5.4823",
       "Emgu.CV.UI >= 4.5.5.4823",
       "Emgu.CV.runtime.windows >= 4.5.5.4823",
+      "FontAwesome.WPF >= 4.7.0.9",
       "Hardcodet.NotifyIcon.Wpf >= 1.1.0",
       "OpenCvSharp4 >= 4.5.5.20211231",
       "OpenCvSharp4.Windows >= 4.5.5.20211231",
@@ -1727,6 +1787,10 @@
           "Emgu.CV.runtime.windows": {
             "target": "Package",
             "version": "[4.5.5.4823, )"
+          },
+          "FontAwesome.WPF": {
+            "target": "Package",
+            "version": "[4.7.0.9, )"
           },
           "Hardcodet.NotifyIcon.Wpf": {
             "target": "Package",

@@ -791,6 +791,7 @@ namespace poe_archnemesis_acs
                         chaosweaverLbl2.Opacity = 0.6;
                         chaosweaverLbl3.Opacity = 0.6;
                         chaosweaverLbl4.Opacity = 0.6;
+                        chaosweaverLbl5.Opacity = 0.6;
                     }
 
                     break;

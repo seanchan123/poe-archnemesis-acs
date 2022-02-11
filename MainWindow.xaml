@@ -93,7 +93,7 @@
                 ToolTipText="Archnemesis ACS" 
             />
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
+            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
                 Path of Exile Archnemesis Auto Cheat Sheet
             </Label>
 

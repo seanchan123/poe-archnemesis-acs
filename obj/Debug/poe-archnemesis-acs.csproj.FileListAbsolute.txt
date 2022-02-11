@@ -90,3 +90,7 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\dll\x64\opencv_
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\OpenCvSharpExtern.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs_Content.g.cs
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\FontAwesome.WPF.dll
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis-acs.exe.manifest
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis-acs.application
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.exe.manifest
+D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.application

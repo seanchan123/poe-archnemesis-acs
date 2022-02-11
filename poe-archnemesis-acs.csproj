@@ -118,6 +118,9 @@
     <PackageReference Include="Emgu.CV.UI">
       <Version>4.5.5.4823</Version>
     </PackageReference>
+    <PackageReference Include="FontAwesome.WPF">
+      <Version>4.7.0.9</Version>
+    </PackageReference>
     <PackageReference Include="Hardcodet.NotifyIcon.Wpf">
       <Version>1.1.0</Version>
     </PackageReference>
@@ -197,6 +200,9 @@
     <Resource Include="Resources\Mods\toxic.png" />
     <Resource Include="Resources\Mods\vampiric.png" />
     <Resource Include="Resources\Test1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\magma-barrier-2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

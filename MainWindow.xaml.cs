@@ -26,6 +26,17 @@ namespace poe_archnemesis_acs
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
+        #region Global Variables
+
+        //Store in List<ArchnemesisModModel> to fetch it more accurately
+        List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
+
+        //Coallate all archnemesis mod names
+        List<string> modNames = new List<string>();
+
+        #endregion
+
+
 
         #region Hotkey Event Listener
         [DllImport("user32.dll")]
@@ -115,34 +126,6 @@ namespace poe_archnemesis_acs
             ShowInTaskbar = false;
             ShowActivated = false;
 
-            this.Show();
-        }
-
-        #region MainWindow Event Listeners
-        //Event Listener for KeyDown when MainWindow is focused
-        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
-        {
-            //if (Keyboard.IsKeyDown(Key.LeftShift) && e.Key == Key.OemTilde)
-            if (e.Key == Key.Z)
-            {
-                MessageBox.Show("yes..");
-            }
-        }
-
-        //EventListener for Closing when closing MainWindow/Exiting Application
-        private void MainWindow_Closing(object sender, CancelEventArgs e)
-        {
-            MessageBox.Show("Closing called");
-        }
-        #endregion
-
-        #region Image Matching
-        private void MatchImage()
-        {
-            int totalCount = 0;
-
-            //Coallate all archnemesis mod names
-            List<string> modNames = new List<string>();
             modNames.Add("mana-siphoner");
             modNames.Add("mirror-image");
             modNames.Add("empowered-elements");
@@ -191,8 +174,34 @@ namespace poe_archnemesis_acs
             modNames.Add("toxic");
             modNames.Add("vampiric");
 
-            //Store in List<ArchnemesisModModel> to fetch it more accurately
-            List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
+            //Show() to allow global event listener to work, Hide() to hide it from view
+            this.Show();
+            this.Hide();
+        }
+
+        #region MainWindow Event Listeners
+        //Event Listener for KeyDown when MainWindow is focused
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (Keyboard.IsKeyDown(Key.LeftShift) && e.Key == Key.OemTilde)
+            if (e.Key == Key.Z)
+            {
+                MessageBox.Show("yes..");
+            }
+        }
+
+        //EventListener for Closing when closing MainWindow/Exiting Application
+        private void MainWindow_Closing(object sender, CancelEventArgs e)
+        {
+            MessageBox.Show("Closing called");
+        }
+        #endregion
+
+        #region Image Matching
+        private void MatchImage()
+        {
+            int totalCount = 0;
+
             foreach (string modName in modNames)
             {
                 ArchnemesisModModel archnemesisMod = new ArchnemesisModModel();
@@ -249,19 +258,19 @@ namespace poe_archnemesis_acs
                     }
                 }
 
-                List<int> asd = new List<int>();
-                int total = 0;
+                //List<int> checkMods = new List<int>();
+                //int total = 0;
 
-                foreach(ArchnemesisModModel ac in archnemesisMods)
-                {
-                    asd.Add(ac.Count);
-                    total += ac.Count;
-                }
+                //foreach(ArchnemesisModModel ac in archnemesisMods)
+                //{
+                //    checkMods.Add(ac.Count);
+                //    total += ac.Count;
+                //}
 
-                asd = asd;
+                //checkMods = checkMods;
 
                 Cv2.ImShow("Matches", screenshot);
-                Cv2.WaitKey(5);
+                Cv2.WaitKey();
             }
 
             File.Delete("..\\..\\Resources\\Capture.jpg");

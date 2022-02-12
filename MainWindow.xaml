@@ -881,7 +881,7 @@
         </Grid>
         <Grid>
             <Grid Name="loadingGrid" Margin="20">
-                <fa:ImageAwesome Icon="Refresh" Spin="True" Height="250" Width="250" Foreground="White"/>
+                <fa:ImageAwesome Icon="Refresh" Spin="True" Height="100" Width="100" Foreground="White"/>
             </Grid>
 
             <Label Opacity="0.5" Name="manaSiphonerHidden" Content="0" FontSize="14"></Label>

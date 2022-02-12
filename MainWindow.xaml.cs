@@ -1,8 +1,14 @@
 ﻿using System;
+using System.IO;
+using System.Text;
+using System.Drawing;
 using System.Windows;
-using System.Windows.Input;
+using System.Diagnostics;
 using System.ComponentModel;
 using System.Windows.Interop;
+using System.Drawing.Imaging;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
 
 using OpenCvSharp;
@@ -10,17 +16,9 @@ using Point = OpenCvSharp.Point;
 using Size = OpenCvSharp.Size;
 using Rect = OpenCvSharp.Rect;
 
-using System.Windows.Forms;
-using System.Drawing;
-using System.Drawing.Imaging;
-
 using MessageBox = System.Windows.MessageBox;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace poe_archnemesis_acs
 {
@@ -31,14 +29,10 @@ namespace poe_archnemesis_acs
     {
         #region Global Variables
 
-        //Store in List<ArchnemesisModModel> to fetch it more accurately
-        List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
-
         //Coallate all archnemesis mod names
         List<string> modNames = new List<string>();
 
         #endregion
-
 
 
         #region Hotkey Event Listener
@@ -76,8 +70,8 @@ namespace poe_archnemesis_acs
             _source = HwndSource.FromHwnd(_windowHandle);
             _source.AddHook(HwndHook);
 
-            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_AKEY); //LSHIFT + A
-            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_SHIFT, VK_SKEY); //LSHIFT + S
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_CONTROL + MOD_SHIFT, VK_AKEY); //CTRL + LSHIFT + A
+            RegisterHotKey(_windowHandle, HOTKEY_ID, MOD_CONTROL + MOD_SHIFT, VK_SKEY); //CTRL + LSHIFT + S
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -240,6 +234,7 @@ namespace poe_archnemesis_acs
             this.Hide();
         }
 
+
         #region MainWindow Event Listeners
         //Event Listener for KeyDown when MainWindow is focused
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
@@ -264,10 +259,14 @@ namespace poe_archnemesis_acs
         }
         #endregion
 
+
         #region Image Matching
         private void MatchImage()
         {
             int totalCount = 0;
+
+            //Store in List<ArchnemesisModModel> to fetch it more accurately
+            List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
 
             foreach (string modName in modNames)
             {
@@ -366,7 +365,6 @@ namespace poe_archnemesis_acs
                 {
                 }
             }
-
         }
         #endregion
 

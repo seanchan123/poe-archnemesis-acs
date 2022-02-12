@@ -7,9 +7,6 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis-acs.application
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis-acs.exe
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\poe-archnemesis-acs.pdb
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Platform.NetStandard.dll
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Bitmap.dll
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Emgu.CV.Platform.NetFramework.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\FontAwesome.WPF.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\Hardcodet.NotifyIcon.Wpf.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\OpenCvSharp.dll
@@ -34,7 +31,6 @@ D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\sv\ZedGraph.res
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\tr\ZedGraph.resources.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\zh-cn\ZedGraph.resources.dll
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\bin\Debug\zh-tw\ZedGraph.resources.dll
-D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.csprojAssemblyReference.cache
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\poe-archnemesis-acs.exe.config
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\MainWindow.baml
 D:\Personal Projects\Path of Exile\poe-archnemesis-acs\obj\Debug\MainWindow.g.cs

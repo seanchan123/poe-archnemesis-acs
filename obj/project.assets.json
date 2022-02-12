@@ -2,48 +2,6 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Emgu.CV/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Primitives": "4.3.0",
-          "System.Runtime": "4.3.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        }
-      },
-      "Emgu.CV.Bitmap/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV": "4.5.5.4823",
-          "System.Drawing.Common": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        }
-      },
-      "Emgu.CV.UI/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV.Bitmap": "4.5.5.4823"
-        },
-        "frameworkAssemblies": [
-          "System.Windows.Forms"
-        ],
-        "compile": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        }
-      },
       "FontAwesome.WPF/4.7.0.9": {
         "type": "package",
         "compile": {
@@ -269,48 +227,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Emgu.CV/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Primitives": "4.3.0",
-          "System.Runtime": "4.3.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        }
-      },
-      "Emgu.CV.Bitmap/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV": "4.5.5.4823",
-          "System.Drawing.Common": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        }
-      },
-      "Emgu.CV.UI/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV.Bitmap": "4.5.5.4823"
-        },
-        "frameworkAssemblies": [
-          "System.Windows.Forms"
-        ],
-        "compile": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        }
-      },
       "FontAwesome.WPF/4.7.0.9": {
         "type": "package",
         "compile": {
@@ -508,48 +424,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Emgu.CV/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Primitives": "4.3.0",
-          "System.Runtime": "4.3.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        }
-      },
-      "Emgu.CV.Bitmap/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV": "4.5.5.4823",
-          "System.Drawing.Common": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        }
-      },
-      "Emgu.CV.UI/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV.Bitmap": "4.5.5.4823"
-        },
-        "frameworkAssemblies": [
-          "System.Windows.Forms"
-        ],
-        "compile": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        }
-      },
       "FontAwesome.WPF/4.7.0.9": {
         "type": "package",
         "compile": {
@@ -751,48 +625,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Emgu.CV/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Primitives": "4.3.0",
-          "System.Runtime": "4.3.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll": {}
-        }
-      },
-      "Emgu.CV.Bitmap/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV": "4.5.5.4823",
-          "System.Drawing.Common": "6.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
-        }
-      },
-      "Emgu.CV.UI/4.5.5.4823": {
-        "type": "package",
-        "dependencies": {
-          "Emgu.CV.Bitmap": "4.5.5.4823"
-        },
-        "frameworkAssemblies": [
-          "System.Windows.Forms"
-        ],
-        "compile": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net461/Emgu.CV.Platform.NetFramework.dll": {}
-        }
-      },
       "FontAwesome.WPF/4.7.0.9": {
         "type": "package",
         "compile": {
@@ -995,58 +827,6 @@
     }
   },
   "libraries": {
-    "Emgu.CV/4.5.5.4823": {
-      "sha512": "TmiMwyjh1/WZwnjNFF2PZmenI1cZqjtm6l9/8icXk7MMGwkd19DqX7s9igSgIgzqQqYXABW6ECOi56GbNTJHJA==",
-      "type": "package",
-      "path": "emgu.cv/4.5.5.4823",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "docs/README.md",
-        "emgu.cv.4.5.5.4823.nupkg.sha512",
-        "emgu.cv.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.dll",
-        "lib/netstandard2.0/Emgu.CV.Platform.NetStandard.xml",
-        "lib/xamarinios10/Emgu.CV.Platform.NetStandard.dll",
-        "lib/xamarinios10/Emgu.CV.Platform.NetStandard.xml"
-      ]
-    },
-    "Emgu.CV.Bitmap/4.5.5.4823": {
-      "sha512": "HikxFAyO72MGD/sUySiFmzYQzdEOIx75X2c2j+s0r6kL2EniKtmU1wEM84WrSONeKjpD1QAxPA2iFPyP4bbw7g==",
-      "type": "package",
-      "path": "emgu.cv.bitmap/4.5.5.4823",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "docs/README.md",
-        "emgu.cv.bitmap.4.5.5.4823.nupkg.sha512",
-        "emgu.cv.bitmap.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/Emgu.CV.Bitmap.dll",
-        "lib/netstandard2.0/Emgu.CV.Bitmap.xml"
-      ]
-    },
-    "Emgu.CV.UI/4.5.5.4823": {
-      "sha512": "SYHkniVX5PommuxVHBR397N9swV7566+OKEApCBQrMUweMFSuY1bk+0aCasAFDoasB5BOV/1lWT6X8eE+coMjg==",
-      "type": "package",
-      "path": "emgu.cv.ui/4.5.5.4823",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "docs/README.md",
-        "emgu.cv.ui.4.5.5.4823.nupkg.sha512",
-        "emgu.cv.ui.nuspec",
-        "icon.png",
-        "lib/net461/Emgu.CV.Platform.NetFramework.dll",
-        "lib/net461/Emgu.CV.Platform.NetFramework.xml",
-        "lib/netcoreapp3.1/Emgu.CV.Platform.NetCore.dll",
-        "lib/netcoreapp3.1/Emgu.CV.Platform.NetCore.xml"
-      ]
-    },
     "FontAwesome.WPF/4.7.0.9": {
       "sha512": "SXE080rnyWMm9Dt0BZzMxh89/o9teuSaqL1N+0O/XM/F/HU8JuZA4XaEKxjBigwZPHHU3/udTa0QMYCHkmH43Q==",
       "type": "package",
@@ -1495,7 +1275,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Emgu.CV.UI >= 4.5.5.4823",
       "FontAwesome.WPF >= 4.7.0.9",
       "Hardcodet.NotifyIcon.Wpf >= 1.1.0",
       "OpenCvSharp4 >= 4.5.5.20211231",
@@ -1545,10 +1324,6 @@
     "frameworks": {
       "net472": {
         "dependencies": {
-          "Emgu.CV.UI": {
-            "target": "Package",
-            "version": "[4.5.5.4823, )"
-          },
           "FontAwesome.WPF": {
             "target": "Package",
             "version": "[4.7.0.9, )"

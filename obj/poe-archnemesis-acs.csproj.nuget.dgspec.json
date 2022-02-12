@@ -38,10 +38,6 @@
       "frameworks": {
         "net472": {
           "dependencies": {
-            "Emgu.CV.UI": {
-              "target": "Package",
-              "version": "[4.5.5.4823, )"
-            },
             "FontAwesome.WPF": {
               "target": "Package",
               "version": "[4.7.0.9, )"

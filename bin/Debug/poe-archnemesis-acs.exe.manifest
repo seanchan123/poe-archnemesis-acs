@@ -42,42 +42,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.Bitmap.dll" size="26040">
-      <assemblyIdentity name="Emgu.CV.Bitmap" version="4.5.5.4823" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>b39mU1Nm8DvGbJenSbsoWPQ9u+L+mTqLbcgv+3YpMZ8=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.Platform.NetFramework.dll" size="121784">
-      <assemblyIdentity name="Emgu.CV.Platform.NetFramework" version="4.5.5.4823" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KYHVbfaz949qQI+TxrkCDG+o6W1J1fyvuOo8F7QZPUM=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.Platform.NetStandard.dll" size="868280">
-      <assemblyIdentity name="Emgu.CV.Platform.NetStandard" version="4.5.5.4823" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FQibo3xlnmz5L2ETQaLI/i9Yn6MeQ27/PG0C2knXurM=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FontAwesome.WPF.dll" size="209408">
       <assemblyIdentity name="FontAwesome.WPF" version="4.7.0.37774" publicKeyToken="0758B07A11A4F466" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -121,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vFfdY/8o0KnOvjNg+g7sK1SdQxim8gW4r7UPV8Dp1+w=</dsig:DigestValue>
+        <dsig:DigestValue>w8dudbN2zO3STt1pIclxZZca5ZdLvQcr4Z7Qey3aK9s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

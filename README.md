@@ -10,11 +10,13 @@
 [![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ) <br />
 This video showcases using the tool before/after/after removal of mod template matching.
 
+<br />
 
 ## Download Link
 
 - Still in development (v0.1.3)
 
+<br />
 
 ## Miscellaneous
 

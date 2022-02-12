@@ -6,11 +6,13 @@
         xmlns:tb="http://www.hardcodet.net/taskbar"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
-        AllowsTransparency="True"
+        Title="PoE Archnemesis Auto Cheat Sheet"
+        Icon="/Resources/Icon.ico"
         WindowStyle="None"
-        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
         KeyDown="MainWindow_KeyDown"
         Closing="MainWindow_Closing" 
+        WindowStartupLocation="CenterScreen"
         d:DesignWidth="1920"
         d:DesignHeight="1080">
     <Window.Background>

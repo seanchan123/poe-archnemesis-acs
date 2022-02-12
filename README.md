@@ -5,10 +5,10 @@
 | :---: | :---: | :---: |
 |![](Resources/Showcase/Showcase_1.JPG)| ![](Resources/Showcase/Showcase_2.JPG)| ![](Resources/Showcase/Showcase_3.JPG)|
 
-This video showcases using the tool before/after/after removal of mod template matching.
+[![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ)__
+(Click to play)
 
-[![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ)
-(Click to thumbnail to play)
+This video showcases using the tool before/after/after removal of mod template matching.
 
 ## Download Link
 

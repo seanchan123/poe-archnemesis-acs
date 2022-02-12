@@ -54,3 +54,5 @@
 - Why doesn't my Archnemesis Mods get counted towards the scan?
     - Due to the icon of the mods being so similar, a very high threshold is used to distinguish each mod. As a result of this high threshold, the difference of a few pixel, between the template that is currently in the tool and what appears from your screen, albeit small may result in the tool as not recognizing the said mod.
     - You may raise an "Issue" via GitHub, and I will review and add the template to the programme for it to be "recognizable".
+- How do I read the cheat sheet?
+    - White, Green, Blue, Purple and Orange are T1, T2, T3, T4 and T5 mods respectively. To make Treant Horde (T2), you'll need to combine the Toxic (T1), Sentinel (T1) and Steel-infused (T1). By this system, you'll need 24 T1-mods to create Innocence-touched (T5) so good luck :^)

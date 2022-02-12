@@ -170,6 +170,7 @@ namespace poe_archnemesis_acs
         }
         #endregion
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -233,7 +234,7 @@ namespace poe_archnemesis_acs
             this.Show();
             this.Hide();
         }
-
+        
 
         #region MainWindow Event Listeners
         //Event Listener for KeyDown when MainWindow is focused
@@ -916,6 +917,7 @@ namespace poe_archnemesis_acs
         }
 
         #endregion
+
 
         #region Other Methods
 

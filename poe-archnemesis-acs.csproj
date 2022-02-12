@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <GenerateResourceMSBuildArchitecture>CurrentArchitecture</GenerateResourceMSBuildArchitecture>
+    <GenerateResourceMSBuildRuntime>CurrentRuntime</GenerateResourceMSBuildRuntime>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBBF6630-4ED8-4A1B-8320-BC3E57E339A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>poe_archnemesis_acs</RootNamespace>
+    <AssemblyName>poe-archnemesis-acs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Owner\Desktop\acs\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9E2CBE7ACA5EE1A1DC31274F64968480E74819E1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>poe-archnemesis-acs_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArchnemesisModModel.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon.ico" />
+    <Resource Include="Resources\Logo.png" />
+    <Resource Include="Resources\Mods\empowered-elements.png" />
+    <Resource Include="Resources\Mods\mana-siphoner.png" />
+    <Resource Include="Resources\Mods\mirror-image.png" />
+    <Resource Include="Resources\Mods\storm-strider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.WPF">
+      <Version>4.7.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="OpenCvSharp4">
+      <Version>4.5.5.20211231</Version>
+    </PackageReference>
+    <PackageReference Include="OpenCvSharp4.Windows">
+      <Version>4.5.5.20211231</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime">
+      <Version>4.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="ZedGraph">
+      <Version>5.1.7</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\arcane-buffer.png" />
+    <Resource Include="Resources\Mods\bloodletter.png" />
+    <Resource Include="Resources\Mods\bonebreaker.png" />
+    <Resource Include="Resources\Mods\brine-king-touched.png" />
+    <Resource Include="Resources\Mods\corrupter.png" />
+    <Resource Include="Resources\Mods\drought-bringer.png" />
+    <Resource Include="Resources\Mods\effigy.png" />
+    <Resource Include="Resources\Mods\frenzied.png" />
+    <Resource Include="Resources\Mods\frost-strider.png" />
+    <Resource Include="Resources\Mods\frostweaver.png" />
+    <Resource Include="Resources\Mods\incendiary.png" />
+    <Resource Include="Resources\Mods\invulnerable.png" />
+    <Resource Include="Resources\Mods\juggernaut.png" />
+    <Resource Include="Resources\Mods\magma-barrier.png" />
+    <Resource Include="Resources\Mods\malediction.png" />
+    <Resource Include="Resources\Mods\overcharged.png" />
+    <Resource Include="Resources\Mods\permafrost.png" />
+    <Resource Include="Resources\Mods\rejuvenating.png" />
+    <Resource Include="Resources\Mods\shakari-touched.png" />
+    <Resource Include="Resources\Mods\stormweaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\crystal-skinned.png" />
+    <Resource Include="Resources\Mods\entangler.png" />
+    <Resource Include="Resources\Mods\executioner.png" />
+    <Resource Include="Resources\Mods\necromancer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\gargantuan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\echoist.png" />
+    <Resource Include="Resources\Mods\flame-strider.png" />
+    <Resource Include="Resources\Mods\hasted.png" />
+    <Resource Include="Resources\Mods\heralding-minions.png" />
+    <Resource Include="Resources\Mods\sentinel.png" />
+    <Resource Include="Resources\Mods\soul-eater.png" />
+    <Resource Include="Resources\Mods\steel-infused.png" />
+    <Resource Include="Resources\Mods\treant-horde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\deadeye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\berserker.png" />
+    <Resource Include="Resources\Mods\chaosweaver.png" />
+    <Resource Include="Resources\Mods\consecrator.png" />
+    <Resource Include="Resources\Mods\dynamo.png" />
+    <Resource Include="Resources\Mods\flameweaver.png" />
+    <Resource Include="Resources\Mods\soul-conduit.png" />
+    <Resource Include="Resources\Mods\toxic.png" />
+    <Resource Include="Resources\Mods\vampiric.png" />
+    <Resource Include="Resources\Test1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\magma-barrier-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\empowering-minions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\hasted-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Test2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

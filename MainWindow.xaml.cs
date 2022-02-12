@@ -175,6 +175,7 @@ namespace poe_archnemesis_acs
         {
             InitializeComponent();
 
+            //MainWindow properties
             Width = 0;
             Height = 0;
             ShowInTaskbar = false;

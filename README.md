@@ -8,7 +8,6 @@
 
 ### Video Showcase
 [![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ) <br />
-(Click to play)
 This video showcases using the tool before/after/after removal of mod template matching.
 
 ## Download Link

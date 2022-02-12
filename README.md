@@ -13,7 +13,9 @@ This video showcases using the tool before/after/after removal of mod template m
 
 - Still in development (v0.1.3)
 
-### Acknowledgement
+## Miscellaneous
+
+### Acknowledgement:
 
 - [OpenCV 4.0](https://opencv.org/opencv-4-0/)
 - [FontAwesome](https://fontawesome.com/)
@@ -22,7 +24,7 @@ This video showcases using the tool before/after/after removal of mod template m
 
 ![Cheat Sheat Referenced](https://i.redd.it/s32npw296gg81.png)
 
-### Updates Incoming (as of 12/02/22)
+### Updates Incoming (as of 12/02/22):
 
 - Working on procuring more mods
     - Mods without braces are not implemented yet; templates from wiki didn't work
@@ -37,7 +39,7 @@ This video showcases using the tool before/after/after removal of mod template m
 - Design of Cheatsheet
     - No icons are in the cheatsheet as T1 mods (and some T2s) will not have space, will be looking for ideas so do suggest
 
-### Q&A
+### Q&A:
 
 - Can you get banned from using this tool?
     - This tool is not against the ToS as it doesn't interfere with any of the Path of Exile official files, let alone the application, nor does it perform multiple actions per key press. Down to its very core, it is simply a screenshot tool that is able to identify and count the number of mods based on a template that was manually procured and cropped.

@@ -1,10 +1,12 @@
 # ![Kitava's Touched](Resources/Logo.png) Path of Exile Archnemesis Auto Cheat Sheet (ACS)
 
 ## ACS Showcase 
-| OpenCV Template Matching | Before Match | After Match |
+
+| OpenCV Identifying | Before Match | After Match |
 | :---: | :---: | :---: |
 |![](Resources/Showcase/Showcase_1.JPG)| ![](Resources/Showcase/Showcase_2.JPG)| ![](Resources/Showcase/Showcase_3.JPG)|
 
+### Video Showcase
 [![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ)<br />
 (Click to play)
 

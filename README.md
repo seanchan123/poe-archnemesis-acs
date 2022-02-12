@@ -7,7 +7,7 @@
 ## ACS Showcase 
 | OpenCV Template Matching | Before Match | After Match |
 | :---: | :---: | :---: |
-|![](/Resources/Showcase/Showcase_1.jpg)| ![](/Resources/Showcase/Showcase_2.jpg)| ![](/Resources/Showcase/Showcase_3.jpg)|
+|![](Resources/Showcase/Showcase_1.JPG)| ![](Resources/Showcase/Showcase_2.JPG)| ![](Resources/Showcase/Showcase_3.JPG)|
 
 ## ACS Video Showcase
 

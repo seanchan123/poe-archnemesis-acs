@@ -11,7 +11,7 @@ This video showcases using the tool before/after/after removal of mod template m
 
 ## Download Link
 
-- Still in development
+- Still in development (v0.1.3)
 
 ### Acknowledgement
 

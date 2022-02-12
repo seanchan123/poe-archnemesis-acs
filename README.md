@@ -37,7 +37,7 @@
 - Working search function
     - Waiting to procure all available mods to start working on search, works by typing in the overlay and darkening non-searched mods
 - Changeable hotkeys
-    - As of now, CTRL + SHIFT + A to show/hide the overlay and CTRL + SHIFT + S to scan + show/hide the overlay
+    - As of now, **CTRL + SHIFT + A** to show/hide the overlay and **CTRL + SHIFT + S** to scan + show/hide the overlay
 - Working on System Tray menu
     - Only an icon of the tool is in the overlay with the name as it's tooltip without any menu to exit etc.
 - Addition of tooltip
@@ -50,7 +50,7 @@
 - Can you get banned from using this tool?
     - This tool is not against the ToS as it doesn't interfere with any of the Path of Exile official files, let alone the application, nor does it perform multiple actions per key press. Down to its very core, it is simply a screenshot tool that is able to identify and count the number of mods based on a template that was manually procured and cropped.
 - How do I use the tool?
-    - Until the ability to change hotkeys are added, the basic control is CTRL + SHIFT + A to show/hide overlay and CTRL + SHIFT + S to scan + show/hide the overlay. 
+    - Until the ability to change hotkeys are added, the basic control is **CTRL + SHIFT + A** to show/hide overlay and **CTRL + SHIFT + S** to scan + show/hide the overlay. 
 - Why doesn't my Archnemesis Mods get counted towards the scan?
     - Due to the icon of the mods being so similar, a very high threshold is used to distinguish each mod. As a result of this high threshold, the difference of a few pixel, between the template that is currently in the tool and what appears from your screen, albeit small may result in the tool as not recognizing the said mod.
     - You may raise an "Issue" via GitHub, and I will review and add the template to the programme for it to be "recognizable".

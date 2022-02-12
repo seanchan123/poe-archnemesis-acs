@@ -20,7 +20,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Threading;
 using System.Diagnostics;
 
 namespace poe_archnemesis_acs
@@ -95,28 +94,32 @@ namespace poe_archnemesis_acs
                                 //SHOW
                                 if (this.ShowActivated == false)
                                 {
+                                    cheatsheetGrid.Opacity = 1;
+                                    loadingGrid.Opacity = 0;
+
                                     this.Topmost = true;
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Show();
 
-                                    cheatsheetGrid.Opacity = 1;
-                                    loadingGrid.Opacity = 0;
                                     modSearchTextBox.Focus();
                                 }
                                 else
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
+                                        cheatsheetGrid.Opacity = 1;
+                                        loadingGrid.Opacity = 0;
+
                                         this.Topmost = true;
                                         this.Show();
 
-                                        cheatsheetGrid.Opacity = 1;
-                                        loadingGrid.Opacity = 0;
                                         modSearchTextBox.Focus();
                                     }
                                     else
                                     {
+                                        cheatsheetGrid.Opacity = 0;
+                                        loadingGrid.Opacity = 1;
                                         this.Hide();
                                     }
                                 }
@@ -126,15 +129,14 @@ namespace poe_archnemesis_acs
                                 //SCAN
                                 if (this.ShowActivated == false)
                                 {
-                                    this.Topmost = true;
                                     cheatsheetGrid.Opacity = 0;
                                     loadingGrid.Opacity = 1;
-                                    Screenshot();
 
+                                    Screenshot();
+                                    this.Show();
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
-                                    this.Show();
-
+                                    this.Topmost = true;
                                     MatchImage();
 
                                     cheatsheetGrid.Opacity = 1;
@@ -145,12 +147,12 @@ namespace poe_archnemesis_acs
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
-                                        this.Topmost = true;
                                         cheatsheetGrid.Opacity = 0;
                                         loadingGrid.Opacity = 1;
-                                        Screenshot();
-                                        this.Show();
 
+                                        Screenshot();
+                                        this.Topmost = true;
+                                        this.Show();
                                         MatchImage();
 
                                         cheatsheetGrid.Opacity = 1;
@@ -159,6 +161,8 @@ namespace poe_archnemesis_acs
                                     }
                                     else
                                     {
+                                        cheatsheetGrid.Opacity = 0;
+                                        loadingGrid.Opacity = 1;
                                         this.Hide();
                                     }
                                 }

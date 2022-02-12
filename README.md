@@ -11,7 +11,8 @@ This video showcases using the tool before/after/after removal of mod template m
 
 ## Download Link
 
-### Still in development
+-Still in development
+
 ### Acknowledgement
 
 - [OpenCV 4.0](https://opencv.org/opencv-4-0/)
@@ -24,10 +25,10 @@ This video showcases using the tool before/after/after removal of mod template m
 ### Updates Incoming (as of 12/02/22)
 
 - Working on procuring more mods
-    - Some modswithout braces like Kitava-touched are not implemented yet; templates from wiki didn't work and I went around asking for screenshots but to no avail.
+    - Mods without braces are not implemented yet; templates from wiki didn't work
 - Working search function
-    - Waiting for procuring of all available mods to start working on search, works by typing in the overlay and darkening non-searched mods.
+    - Waiting to procure all available mods to start working on search, works by typing in the overlay and darkening non-searched mods
 - Changeable hotkeys
-    - As of right now, CTRL + SHIFT + A to show the overlay and CTRL + SHIFT + S to scan.
+    - As of right now, CTRL + SHIFT + A to show the overlay and CTRL + SHIFT + S to scan
 - Working on System Tray menu
-    - Only an icon of the tool is in the overlay with the name as it's tooltip without any menu to exit etc.
+    - Only an icon of the tool is in the overlay with the name as it's tooltip without any menu to exit etc

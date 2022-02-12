@@ -5,12 +5,11 @@
 ## ACS Showcase 
 | OpenCV Template Matching | Before Match | After Match |
 | :---: | :---: | :---: |
-|![](Resources/Showcase/Showcase_1.jpg)| ![](Resources/Showcase/Showcase_2.jpg)| ![](Resources/Showcase/Showcase_3.jpg)|
+|![](/Resources/Showcase/Showcase_1.jpg)| ![](/Resources/Showcase/Showcase_2.jpg)| ![](/Resources/Showcase/Showcase_3.jpg)|
 
 ## ACS Video Showcase
 
 This video showcases using the tool before/after/after removal of mod template matching.
-(Goodbye ilvl72 Arcane Buffer 🥲)
 
 [![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ)
 
@@ -23,7 +22,7 @@ This video showcases using the tool before/after/after removal of mod template m
 
 ![Cheat Sheat Referenced](https://i.redd.it/s32npw296gg81.png)
 
-### Updates Incoming
+### Updates Incoming (as of 12/02/22)
 
 - Working on procuring more mods
     - Some modswithout braces like Kitava-touched are not implemented yet; templates from wiki didn't work and I went around asking for screenshots but to no avail.

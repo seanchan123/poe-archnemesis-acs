@@ -7,7 +7,7 @@
 |![](Resources/Showcase/Showcase_1.JPG)| ![](Resources/Showcase/Showcase_2.JPG)| ![](Resources/Showcase/Showcase_3.JPG)|
 
 ### Video Showcase
-<span align="center">
+<span align="left">
 [![Video Showcase](https://img.youtube.com/vi/1dJZwOJwuFQ/0.jpg)](https://youtu.be/1dJZwOJwuFQ) <br />
 (Click to play)
 </span>

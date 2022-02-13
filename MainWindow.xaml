@@ -623,7 +623,7 @@
             </Label>
             <Label Opacity="0.5" Name="droughtBringerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="31" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Droughtbringer" /><LineBreak/>
+                    <Run Text="Drought Bringer" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=droughtBringerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>

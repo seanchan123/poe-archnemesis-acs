@@ -629,12 +629,22 @@
             </Label>
 
             <!--6th Column-->
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="corpseDetonatorLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Corpse Detonator" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=corpseDetonatorHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
 
             <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Abberath-Touched" FontSize="14" Grid.Row="10" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
 
             <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Tukohama-Touched" FontSize="14" Grid.Row="17" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue"></Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Corpse Detonator" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="corpseDetonatorLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="3" Background="DodgerBlue">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Corpse Detonator" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=corpseDetonatorHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="soulEaterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Soul Eater" /><LineBreak />
@@ -966,6 +976,7 @@
             <Label Opacity="0.5" Name="hexerHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="temporalBubbleHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="bombardierHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="corpseDetonatorHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

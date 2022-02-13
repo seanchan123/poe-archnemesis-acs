@@ -233,6 +233,7 @@ namespace poe_archnemesis_acs
             modNames.Add("hexer");
             modNames.Add("temporal-bubble");
             modNames.Add("bombardier");
+            modNames.Add("corpse-detonator");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -339,6 +340,7 @@ namespace poe_archnemesis_acs
                 //Cv2.WaitKey();
             }
 
+            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
@@ -946,6 +948,17 @@ namespace poe_archnemesis_acs
                         bombardierLbl1.Opacity = 1.0;
                         bombardierLbl2.Opacity = 1.0;
                         bombardierLbl3.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "corpseDetonatorHidden":
+
+                    if (totalCount != 0)
+                    {
+                        corpseDetonatorHidden.Content = totalCount;
+                        corpseDetonatorLbl1.Opacity = 1.0;
+                        corpseDetonatorLbl2.Opacity = 1.0;
                     }
 
                     break;

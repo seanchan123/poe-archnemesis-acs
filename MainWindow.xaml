@@ -378,7 +378,12 @@
             </Label>
 
             <!--4th Column-->
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="bombardierLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black"  FontSize="14" Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Bombardier" />
+                    <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -648,7 +653,12 @@
             </Label>
 
             <!--8th Column-->
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" ></Label>
+            <Label Opacity="0.5" Name="bombardierLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" >
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Bombardier" />
+                    <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="4" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -698,7 +708,12 @@
                     <Bold>{<Run Text="{Binding ElementName=hastedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombardier" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="bombardierLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Bombardier" />
+                    <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="14" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -950,6 +965,7 @@
             <Label Opacity="0.5" Name="empoweringMinionsHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="hexerHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="temporalBubbleHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="bombardierHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

@@ -250,5 +250,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\temporal-bubble.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\bombardier.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

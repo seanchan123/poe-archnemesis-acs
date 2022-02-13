@@ -232,6 +232,7 @@ namespace poe_archnemesis_acs
             modNames.Add("empowering-minions");
             modNames.Add("hexer");
             modNames.Add("temporal-bubble");
+            modNames.Add("bombardier");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -933,6 +934,18 @@ namespace poe_archnemesis_acs
                     {
                         temporalBubbleHidden.Content = totalCount;
                         temporalBubbleLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "bombardierHidden":
+
+                    if (totalCount != 0)
+                    {
+                        bombardierHidden.Content = totalCount;
+                        bombardierLbl1.Opacity = 1.0;
+                        bombardierLbl2.Opacity = 1.0;
+                        bombardierLbl3.Opacity = 1.0;
                     }
 
                     break;

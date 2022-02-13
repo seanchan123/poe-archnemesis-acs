@@ -357,7 +357,12 @@
                     <Bold>{<Run Text="{Binding ElementName=crystalSkinnedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Temporal Bubble" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="temporalBubbleLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Temporal&#xA;Bubble" /><LineBreak/>
+                    <Bold>{<Run Text="{Binding ElementName=temporalBubbleHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="empoweredElementsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="5" Grid.RowSpan="5" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Empowered&#xA;Elements" /><LineBreak/>
@@ -944,6 +949,7 @@
             <Label Opacity="0.5" Name="vampiricHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="empoweringMinionsHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="hexerHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="temporalBubbleHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

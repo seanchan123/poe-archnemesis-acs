@@ -4,6 +4,7 @@ using System.Text;
 using System.Drawing;
 using System.Windows;
 using System.Diagnostics;
+using System.Windows.Forms;
 using System.ComponentModel;
 using System.Windows.Interop;
 using System.Drawing.Imaging;
@@ -18,7 +19,6 @@ using Rect = OpenCvSharp.Rect;
 
 using MessageBox = System.Windows.MessageBox;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
-using System.Windows.Forms;
 
 namespace poe_archnemesis_acs
 {
@@ -231,6 +231,7 @@ namespace poe_archnemesis_acs
             modNames.Add("vampiric");
             modNames.Add("empowering-minions");
             modNames.Add("hexer");
+            modNames.Add("temporal-bubble");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -922,6 +923,16 @@ namespace poe_archnemesis_acs
                         hexerHidden.Content = totalCount;
                         hexerLbl1.Opacity = 1.0;
                         hexerLbl2.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "temporalBubbleHidden":
+
+                    if (totalCount != 0)
+                    {
+                        temporalBubbleHidden.Content = totalCount;
+                        temporalBubbleLbl1.Opacity = 1.0;
                     }
 
                     break;

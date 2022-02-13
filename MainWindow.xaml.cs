@@ -230,6 +230,7 @@ namespace poe_archnemesis_acs
             modNames.Add("toxic");
             modNames.Add("vampiric");
             modNames.Add("empowering-minions");
+            modNames.Add("hexer");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -910,6 +911,17 @@ namespace poe_archnemesis_acs
                         empoweringMinionsHidden.Content = totalCount;
                         empoweringMinionsLbl1.Opacity = 1.0;
                         empoweringMinionsLbl2.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "hexerHidden":
+
+                    if (totalCount != 0)
+                    {
+                        hexerHidden.Content = totalCount;
+                        hexerLbl1.Opacity = 1.0;
+                        hexerLbl2.Opacity = 1.0;
                     }
 
                     break;

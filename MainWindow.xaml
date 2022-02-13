@@ -245,7 +245,12 @@
                     <Bold>{<Run Text="{Binding ElementName=treantHordeHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="hexerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Hexer" />
+                    <Bold>{<Run Text="{Binding ElementName=hexerHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="maledictionLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Malediction" />
@@ -278,7 +283,12 @@
                 </TextBlock>
             </Label>
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Hexer" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="hexerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Hexer" />
+                    <Bold>{<Run Text="{Binding ElementName=hexerHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="juggernautLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="17" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Juggernaut" />
@@ -933,6 +943,8 @@
             <Label Opacity="0.5" Name="toxicHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="vampiricHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="empoweringMinionsHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="hexerHidden" Content="0" FontSize="14"></Label>
+
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>
     </Grid>

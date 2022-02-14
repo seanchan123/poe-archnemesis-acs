@@ -234,6 +234,7 @@ namespace poe_archnemesis_acs
             modNames.Add("temporal-bubble");
             modNames.Add("bombardier");
             modNames.Add("corpse-detonator");
+            modNames.Add("evocationist");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -959,6 +960,16 @@ namespace poe_archnemesis_acs
                         corpseDetonatorHidden.Content = totalCount;
                         corpseDetonatorLbl1.Opacity = 1.0;
                         corpseDetonatorLbl2.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "evocationistHidden":
+
+                    if (totalCount != 0)
+                    {
+                        evocationistHidden.Content = totalCount;
+                        evocationistLbl1.Opacity = 1.0;
                     }
 
                     break;

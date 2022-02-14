@@ -247,7 +247,7 @@
             </Label>
             <Label Opacity="0.5" Name="hexerLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="6" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Hexer" />
+                    <Run Text="Hexer" /><LineBreak />
                     <Bold>{<Run Text="{Binding ElementName=hexerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
@@ -285,7 +285,7 @@
 
             <Label Opacity="0.5" Name="hexerLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="15" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Hexer" />
+                    <Run Text="Hexer" /><LineBreak />
                     <Bold>{<Run Text="{Binding ElementName=hexerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
@@ -304,7 +304,7 @@
 
             <Label Opacity="0.5" Name="evocationistLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="19" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Evocationist" />
+                    <Run Text="Evocationist" /><LineBreak />
                     <Bold>{<Run Text="{Binding ElementName=evocationistHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>

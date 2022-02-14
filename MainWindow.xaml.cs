@@ -235,6 +235,7 @@ namespace poe_archnemesis_acs
             modNames.Add("bombardier");
             modNames.Add("corpse-detonator");
             modNames.Add("evocationist");
+            modNames.Add("tukohama-touched");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -341,7 +342,6 @@ namespace poe_archnemesis_acs
                 //Cv2.WaitKey();
             }
 
-            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
@@ -970,6 +970,16 @@ namespace poe_archnemesis_acs
                     {
                         evocationistHidden.Content = totalCount;
                         evocationistLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "tukohamaTouchedHidden":
+
+                    if (totalCount != 0)
+                    {
+                        tukohamaTouchedHidden.Content = totalCount;
+                        tukohamaTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;

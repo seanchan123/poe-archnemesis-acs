@@ -259,5 +259,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\evocationist.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\tukohama-touched.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poe-archnemesis-acs.exe" size="4118488">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="poe-archnemesis-acs.exe" size="4175832">
       <assemblyIdentity name="poe-archnemesis-acs" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VfQCxlugWt15d+qDVB17lFW3v69S9RlCkuCxrRoXpO8=</dsig:DigestValue>
+        <dsig:DigestValue>9+QuYdKiOYiWrOe1th00TvaLHVAv4YE4mcgPEh/fAXs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

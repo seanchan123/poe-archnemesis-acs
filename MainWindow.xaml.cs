@@ -237,6 +237,7 @@ namespace poe_archnemesis_acs
             modNames.Add("evocationist");
             modNames.Add("tukohama-touched");
             modNames.Add("assassin");
+            modNames.Add("arakaali-touched");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -992,6 +993,16 @@ namespace poe_archnemesis_acs
                         assassinHidden.Content = totalCount;
                         assassinLbl1.Opacity = 1.0;
                         assassinLbl2.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "arakaaliTouchedHidden":
+
+                    if (totalCount != 0)
+                    {
+                        arakaaliTouchedHidden.Content = totalCount;
+                        arakaaliTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;

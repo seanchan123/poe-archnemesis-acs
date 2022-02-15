@@ -673,7 +673,12 @@
             </Label>
 
             <!--7th Column-->
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Arakaali-Touched" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" Name="arakaaliTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="7" Background="MediumPurple">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Arakaali-Touched" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=arakaaliTouchedHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava-Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
             <Label Opacity="0.5" Name="shakariTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple">
                 <TextBlock TextAlignment="Center">
@@ -1000,6 +1005,7 @@
             <Label Opacity="0.5" Name="evocationistHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="tukohamaTouchedHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="assassinHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="arakaaliTouchedHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

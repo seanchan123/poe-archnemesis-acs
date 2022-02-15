@@ -321,7 +321,12 @@
                 </TextBlock>
             </Label>
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="assassinLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="SpringGreen">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Assassin" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=assassinHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="3" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -543,7 +548,12 @@
                     <Bold>{<Run Text="{Binding ElementName=entanglerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Assassin" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen"></Label>
+            <Label Opacity="0.5" Name="assassinLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="8" Grid.Column="10" Grid.ColumnSpan="4" Grid.RowSpan="2" Background="SpringGreen">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Assassin" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=assassinHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="flameStriderLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="SpringGreen">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Flame Strider" /><LineBreak/>
@@ -989,6 +999,7 @@
             <Label Opacity="0.5" Name="corpseDetonatorHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="evocationistHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="tukohamaTouchedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="assassinHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

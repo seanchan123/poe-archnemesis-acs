@@ -931,7 +931,12 @@
                     <Bold>{<Run Text="{Binding ElementName=lunarisTouchedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Solaris-Touched" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" Name="solarisTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="23" Grid.ColumnSpan="2" Grid.RowSpan="10" Background="MediumPurple">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Solaris&#xA;Touched" /><LineBreak/>
+                    <Bold>{<Run Text="{Binding ElementName=solarisTouchedHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
 
             <!--12th Column-->
             <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
@@ -1022,6 +1027,7 @@
             <Label Opacity="0.5" Name="assassinHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="arakaaliTouchedHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="lunarisTouchedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="solarisTouchedHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

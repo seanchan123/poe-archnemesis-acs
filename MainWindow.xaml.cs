@@ -185,6 +185,7 @@ namespace poe_archnemesis_acs
             modNames.Add("heralding-minions");
             modNames.Add("sentinel");
             modNames.Add("soul-eater");
+            modNames.Add("soul-eater-2");
             modNames.Add("steel-infused");
             modNames.Add("treant-horde");
             modNames.Add("deadeye");

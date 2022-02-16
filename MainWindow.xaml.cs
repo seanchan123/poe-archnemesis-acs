@@ -208,6 +208,7 @@ namespace poe_archnemesis_acs
             modNames.Add("opulent");
             modNames.Add("lunaris-touched");
             modNames.Add("solaris-touched");
+            modNames.Add("innocence-touched");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -1006,6 +1007,16 @@ namespace poe_archnemesis_acs
                     {
                         solarisTouchedHidden.Content = totalCount;
                         solarisTouchedLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "innocenceTouchedHidden":
+
+                    if (totalCount != 0)
+                    {
+                        innocenceTouchedHidden.Content = totalCount;
+                        innocenceTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;

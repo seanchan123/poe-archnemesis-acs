@@ -280,5 +280,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\solaris-touched.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\innocence-touched.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

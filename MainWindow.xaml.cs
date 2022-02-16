@@ -91,10 +91,7 @@ namespace poe_archnemesis_acs
                                     loadingGrid.Opacity = 0;
                                     cheatsheetGrid.Opacity = 1;
 
-                                    this.Show();
-                                    this.Topmost = true;
-                                    this.WindowState = WindowState.Maximized;
-                                    this.ShowActivated = true;
+                                    ShowOverlay();
 
                                     modSearchTextBox.Focus();
                                 }
@@ -105,10 +102,7 @@ namespace poe_archnemesis_acs
                                         loadingGrid.Opacity = 0;
                                         cheatsheetGrid.Opacity = 1;
 
-                                        this.Show();
-                                        this.Topmost = true;
-                                        this.WindowState = WindowState.Maximized;
-                                        this.ShowActivated = true;
+                                        ShowOverlay();
 
                                         modSearchTextBox.Focus();
                                     }
@@ -130,11 +124,7 @@ namespace poe_archnemesis_acs
                                     loadingGrid.Opacity = 1;
                                     cheatsheetGrid.Opacity = 0;
 
-                                    this.Show();
-                                    this.Topmost = true;
-                                    this.WindowState = WindowState.Maximized;
-                                    this.ShowActivated = true;
-
+                                    ShowOverlay();
                                     ReturnLabelToDefault();
                                     MatchImage();
 
@@ -151,11 +141,7 @@ namespace poe_archnemesis_acs
                                         loadingGrid.Opacity = 1;
                                         cheatsheetGrid.Opacity = 0;
 
-                                        this.Show();
-                                        this.Topmost = true;
-                                        this.WindowState = WindowState.Maximized;
-                                        this.ShowActivated = true;
-
+                                        ShowOverlay();
                                         ReturnLabelToDefault();
                                         MatchImage();
 
@@ -1066,6 +1052,14 @@ namespace poe_archnemesis_acs
                 }
             }
 
+        }
+
+        public void ShowOverlay()
+        {
+            this.Show();
+            this.Topmost = true;
+            this.WindowState = WindowState.Maximized;
+            this.ShowActivated = true;
         }
 
         #endregion

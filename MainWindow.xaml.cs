@@ -86,7 +86,7 @@ namespace poe_archnemesis_acs
                             if (vkey == VK_AKEY)
                             {
                                 //SHOW
-                                if (this.ShowActivated == false)
+                                if (this.Visibility == Visibility.Hidden)
                                 {
                                     loadingGrid.Opacity = 0;
                                     cheatsheetGrid.Opacity = 1;
@@ -97,27 +97,15 @@ namespace poe_archnemesis_acs
                                 }
                                 else
                                 {
-                                    if (this.Visibility == Visibility.Hidden)
-                                    {
-                                        loadingGrid.Opacity = 0;
-                                        cheatsheetGrid.Opacity = 1;
-
-                                        ShowOverlay();
-
-                                        modSearchTextBox.Focus();
-                                    }
-                                    else
-                                    {
-                                        loadingGrid.Opacity = 1;
-                                        cheatsheetGrid.Opacity = 0;
-                                        this.Hide();
-                                    }
+                                    loadingGrid.Opacity = 1;
+                                    cheatsheetGrid.Opacity = 0;
+                                    this.Hide();
                                 }
                             }
                             else if (vkey == VK_SKEY)
                             {
                                 //SCAN
-                                if (this.ShowActivated == false)
+                                if (this.Visibility == Visibility.Hidden)
                                 {
                                     Screenshot();
 
@@ -134,27 +122,9 @@ namespace poe_archnemesis_acs
                                 }
                                 else
                                 {
-                                    if (this.Visibility == Visibility.Hidden)
-                                    {
-                                        Screenshot();
-
-                                        loadingGrid.Opacity = 1;
-                                        cheatsheetGrid.Opacity = 0;
-
-                                        ShowOverlay();
-                                        ReturnLabelToDefault();
-                                        MatchImage();
-
-                                        cheatsheetGrid.Opacity = 1;
-                                        loadingGrid.Opacity = 0;
-                                        modSearchTextBox.Focus();
-                                    }
-                                    else
-                                    {
-                                        loadingGrid.Opacity = 1;
-                                        cheatsheetGrid.Opacity = 0;
-                                        this.Hide();
-                                    }
+                                    loadingGrid.Opacity = 1;
+                                    cheatsheetGrid.Opacity = 0;
+                                    this.Hide();
                                 }
                             }
                             handled = true;
@@ -242,7 +212,7 @@ namespace poe_archnemesis_acs
             this.Show();
             this.Hide();
         }
-        
+
 
         #region MainWindow Event Listeners
         //Event Listener for KeyDown when MainWindow is focused

@@ -283,5 +283,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\innocence-touched.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\ice-prison.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

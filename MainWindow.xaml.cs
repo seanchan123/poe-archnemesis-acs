@@ -209,6 +209,7 @@ namespace poe_archnemesis_acs
             modNames.Add("lunaris-touched");
             modNames.Add("solaris-touched");
             modNames.Add("innocence-touched");
+            modNames.Add("ice-prison");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -311,8 +312,8 @@ namespace poe_archnemesis_acs
                     BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                //Cv2.ImShow("Matches", screenshot);
-                //Cv2.WaitKey();
+                Cv2.ImShow("Matches", screenshot);
+                Cv2.WaitKey();
             }
 
             totalCount = totalCount;
@@ -1017,6 +1018,16 @@ namespace poe_archnemesis_acs
                     {
                         innocenceTouchedHidden.Content = totalCount;
                         innocenceTouchedLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "icePrisonHidden":
+
+                    if (totalCount != 0)
+                    {
+                        icePrisonHidden.Content = totalCount;
+                        icePrisonLbl1.Opacity = 1.0;
                     }
 
                     break;

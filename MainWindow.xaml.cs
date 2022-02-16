@@ -213,6 +213,7 @@ namespace poe_archnemesis_acs
             modNames.Add("gargantuan");
             modNames.Add("echoist");
             modNames.Add("flame-strider");
+            modNames.Add("flame-strider-2");
             modNames.Add("hasted");
             modNames.Add("hasted-2");
             modNames.Add("heralding-minions");
@@ -340,10 +341,11 @@ namespace poe_archnemesis_acs
                     BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                //Cv2.ImShow("Matches", screenshot);
-                //Cv2.WaitKey();
+                Cv2.ImShow("Matches", screenshot);
+                Cv2.WaitKey();
             }
 
+            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());

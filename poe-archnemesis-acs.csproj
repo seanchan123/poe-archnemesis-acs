@@ -268,5 +268,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\arakaali-touched.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\flame-strider-2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

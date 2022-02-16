@@ -346,6 +346,7 @@ namespace poe_archnemesis_acs
                 //Cv2.WaitKey();
             }
 
+            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
@@ -691,7 +692,7 @@ namespace poe_archnemesis_acs
 
                     if (totalCount != 0)
                     {
-                        shakariTouchedHidden.Content = totalCount;
+                        necromancerHidden.Content = totalCount;
                         necromancerLbl1.Opacity = 1.0;
                         necromancerLbl2.Opacity = 1.0;
                         necromancerLbl3.Opacity = 1.0;
@@ -953,6 +954,8 @@ namespace poe_archnemesis_acs
                         bombardierLbl1.Opacity = 1.0;
                         bombardierLbl2.Opacity = 1.0;
                         bombardierLbl3.Opacity = 1.0;
+                        bombardierLbl4.Opacity = 1.0;
+                        bombardierLbl5.Opacity = 1.0;
                     }
 
                     break;

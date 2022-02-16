@@ -487,7 +487,12 @@
                 </TextBlock>
             </Label>
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="bombardierLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Bombardier" />
+                    <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="23" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -495,7 +500,12 @@
                 </TextBlock>
             </Label>
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Bombadier" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White"></Label>
+            <Label Opacity="0.5" Name="bombardierLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Bombardier" />
+                    <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="overchargedLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="26" Grid.Column="8" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Overcharged" />
@@ -688,7 +698,7 @@
             </Label>
 
             <!--8th Column-->
-            <Label Opacity="0.5" Name="bombardierLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" >
+            <Label Opacity="0.5" Name="bombardierLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="17" Grid.ColumnSpan="2" Background="White" >
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bombardier" />
                     <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>
@@ -743,7 +753,7 @@
                     <Bold>{<Run Text="{Binding ElementName=hastedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" Name="bombardierLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bombardierLbl5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bombardier" />
                     <Bold>{<Run Text="{Binding ElementName=bombardierHidden, Path=Content}" />}</Bold>

@@ -921,7 +921,7 @@
             <!--12th Column-->
             <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Innocence-Touched" FontSize="14" Grid.Row="3" Grid.Column="25" Grid.ColumnSpan="2" Grid.RowSpan="24" Background="Orange"></Label>
 
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Orange">
+            <Label Opacity="0.5" Name="opulentLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="17" Grid.ColumnSpan="10" Grid.RowSpan="2" Background="Orange">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Opulent" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=opulentHidden, Path=Content}" />}</Bold>

@@ -239,6 +239,7 @@ namespace poe_archnemesis_acs
             modNames.Add("tukohama-touched");
             modNames.Add("assassin");
             modNames.Add("arakaali-touched");
+            modNames.Add("opulent");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -341,11 +342,10 @@ namespace poe_archnemesis_acs
                     BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                Cv2.ImShow("Matches", screenshot);
-                Cv2.WaitKey();
+                //Cv2.ImShow("Matches", screenshot);
+                //Cv2.WaitKey();
             }
 
-            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
@@ -1005,6 +1005,16 @@ namespace poe_archnemesis_acs
                     {
                         arakaaliTouchedHidden.Content = totalCount;
                         arakaaliTouchedLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "opulentHidden":
+
+                    if (totalCount != 0)
+                    {
+                        opulentHidden.Content = totalCount;
+                        opulentLbl1.Opacity = 1.0;
                     }
 
                     break;

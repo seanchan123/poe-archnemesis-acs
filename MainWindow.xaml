@@ -961,7 +961,7 @@
 
 
         </Grid>
-        <Grid>
+        <Grid Name="hiddenGrid">
             <Grid Name="loadingGrid" Margin="20">
                 <fa:ImageAwesome Icon="Refresh" Spin="True" Height="100" Width="100" Foreground="White"/>
             </Grid>

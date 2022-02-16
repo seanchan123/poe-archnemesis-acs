@@ -131,6 +131,7 @@ namespace poe_archnemesis_acs
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
                                     this.Topmost = true;
+                                    ReturnLabelToDefault();
                                     MatchImage();
 
                                     cheatsheetGrid.Opacity = 1;
@@ -147,6 +148,7 @@ namespace poe_archnemesis_acs
                                         Screenshot();
                                         this.Topmost = true;
                                         this.Show();
+                                        ReturnLabelToDefault();
                                         MatchImage();
 
                                         cheatsheetGrid.Opacity = 1;
@@ -1032,6 +1034,28 @@ namespace poe_archnemesis_acs
                     }
 
                     break;
+            }
+
+        }
+
+        public void ReturnLabelToDefault()
+        {
+            foreach (var childObject in cheatsheetGrid.Children)
+            {
+                if (childObject.GetType() == typeof(System.Windows.Controls.Label))
+                {
+                    //Cast childObject as Label
+                    ((System.Windows.Controls.Label)childObject).Opacity = 0.5;
+                }
+            }
+
+            foreach (var childObject in hiddenGrid.Children)
+            {
+                if (childObject.GetType() == typeof(System.Windows.Controls.Label))
+                {
+                    //Cast childObject as Label
+                    ((System.Windows.Controls.Label)childObject).Content = 0;
+                }
             }
 
         }

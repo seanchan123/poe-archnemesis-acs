@@ -88,13 +88,13 @@ namespace poe_archnemesis_acs
                                 //SHOW
                                 if (this.ShowActivated == false)
                                 {
-                                    cheatsheetGrid.Opacity = 1;
                                     loadingGrid.Opacity = 0;
+                                    cheatsheetGrid.Opacity = 1;
 
+                                    this.Show();
                                     this.Topmost = true;
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
-                                    this.Show();
 
                                     modSearchTextBox.Focus();
                                 }
@@ -102,18 +102,20 @@ namespace poe_archnemesis_acs
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
-                                        cheatsheetGrid.Opacity = 1;
                                         loadingGrid.Opacity = 0;
+                                        cheatsheetGrid.Opacity = 1;
 
-                                        this.Topmost = true;
                                         this.Show();
+                                        this.Topmost = true;
+                                        this.WindowState = WindowState.Maximized;
+                                        this.ShowActivated = true;
 
                                         modSearchTextBox.Focus();
                                     }
                                     else
                                     {
-                                        cheatsheetGrid.Opacity = 0;
                                         loadingGrid.Opacity = 1;
+                                        cheatsheetGrid.Opacity = 0;
                                         this.Hide();
                                     }
                                 }
@@ -123,14 +125,16 @@ namespace poe_archnemesis_acs
                                 //SCAN
                                 if (this.ShowActivated == false)
                                 {
-                                    cheatsheetGrid.Opacity = 0;
-                                    loadingGrid.Opacity = 1;
-
                                     Screenshot();
+
+                                    loadingGrid.Opacity = 1;
+                                    cheatsheetGrid.Opacity = 0;
+
                                     this.Show();
+                                    this.Topmost = true;
                                     this.WindowState = WindowState.Maximized;
                                     this.ShowActivated = true;
-                                    this.Topmost = true;
+
                                     ReturnLabelToDefault();
                                     MatchImage();
 
@@ -142,12 +146,16 @@ namespace poe_archnemesis_acs
                                 {
                                     if (this.Visibility == Visibility.Hidden)
                                     {
-                                        cheatsheetGrid.Opacity = 0;
-                                        loadingGrid.Opacity = 1;
-
                                         Screenshot();
-                                        this.Topmost = true;
+
+                                        loadingGrid.Opacity = 1;
+                                        cheatsheetGrid.Opacity = 0;
+
                                         this.Show();
+                                        this.Topmost = true;
+                                        this.WindowState = WindowState.Maximized;
+                                        this.ShowActivated = true;
+
                                         ReturnLabelToDefault();
                                         MatchImage();
 
@@ -157,8 +165,8 @@ namespace poe_archnemesis_acs
                                     }
                                     else
                                     {
-                                        cheatsheetGrid.Opacity = 0;
                                         loadingGrid.Opacity = 1;
+                                        cheatsheetGrid.Opacity = 0;
                                         this.Hide();
                                     }
                                 }

@@ -274,5 +274,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\opulent.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\lunaris-touched.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

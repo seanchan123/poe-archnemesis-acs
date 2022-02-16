@@ -912,14 +912,14 @@
             <!--10th Column-->
             <Label Opacity="0.5" Name="empoweringMinionsLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="3" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Empowering Minions" /><LineBreak/>
+                    <Run Text="Empowering&#xA;Minions" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=empoweringMinionsHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
             <Label Opacity="0.5" Name="empoweringMinionsLbl2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="13" Grid.Column="21" Grid.ColumnSpan="2" Grid.RowSpan="5" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Empowering Minions" /><LineBreak/>
+                    <Run Text="Empowering&#xA;Minions" /><LineBreak/>
                     <Bold>{<Run Text="{Binding ElementName=empoweringMinionsHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>

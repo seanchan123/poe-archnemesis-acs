@@ -313,11 +313,10 @@ namespace poe_archnemesis_acs
                     BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
                 }
 
-                Cv2.ImShow("Matches", screenshot);
-                Cv2.WaitKey();
+                //Cv2.ImShow("Matches", screenshot);
+                //Cv2.WaitKey();
             }
 
-            totalCount = totalCount;
             stopwatch.Stop();
             File.Delete("..\\..\\Resources\\Capture.jpg");
             //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());

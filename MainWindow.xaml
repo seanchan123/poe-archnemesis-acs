@@ -703,7 +703,12 @@
                     <Bold>{<Run Text="{Binding ElementName=arakaaliTouchedHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Kitava&#xA;Touched" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple"></Label>
+            <Label Opacity="0.5" Name="kitavaTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="10" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="15" Background="MediumPurple">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Kitava&#xA;Touched" /><LineBreak />
+                    <Bold>{<Run Text="{Binding ElementName=kitavaTouchedHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="shakariTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="25" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="8" Background="MediumPurple">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Shakari&#xA;Touched" /><LineBreak />
@@ -1051,6 +1056,7 @@
             <Label Opacity="0.5" Name="icePrisonHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="tricksterHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="abberathTouchedHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="kitavaTouchedHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

@@ -213,6 +213,7 @@ namespace poe_archnemesis_acs
             modNames.Add("ice-prison");
             modNames.Add("trickster");
             modNames.Add("abberath-touched");
+            modNames.Add("kitava-touched");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -1050,6 +1051,16 @@ namespace poe_archnemesis_acs
                     {
                         abberathTouchedHidden.Content = totalCount;
                         abberathTouchedLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "kitavaTouchedHidden":
+
+                    if (totalCount != 0)
+                    {
+                        kitavaTouchedHidden.Content = totalCount;
+                        kitavaTouchedLbl1.Opacity = 1.0;
                     }
 
                     break;

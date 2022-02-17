@@ -289,5 +289,8 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\soul-eater-2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\trickster.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,7 +18,6 @@
     <Window.Background>
         <SolidColorBrush Opacity="0.5" Color="Black" />
     </Window.Background>
-
     <Grid>
         <Grid Name="cheatsheetGrid">
             <Grid.ColumnDefinitions>
@@ -384,7 +383,12 @@
                     <Bold>{<Run Text="{Binding ElementName=empoweredElementsHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" Content="Trickster" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue"></Label>
+            <Label Opacity="0.5" Name="tricksterLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="2" Background="DodgerBlue">
+                <TextBlock TextAlignment="Center">
+                    <Run Text="Trickster" /><LineBreak/>
+                    <Bold>{<Run Text="{Binding ElementName=tricksterHidden, Path=Content}" />}</Bold>
+                </TextBlock>
+            </Label>
             <Label Opacity="0.5" Name="brineKingTouchedLbl1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="28" Grid.Column="5" Grid.RowSpan="6" Grid.ColumnSpan="2" Background="DodgerBlue">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Brine King&#xA;Touched" /><LineBreak/>
@@ -1040,6 +1044,7 @@
             <Label Opacity="0.5" Name="solarisTouchedHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="innocenceTouchedHidden" Content="0" FontSize="14"></Label>
             <Label Opacity="0.5" Name="icePrisonHidden" Content="0" FontSize="14"></Label>
+            <Label Opacity="0.5" Name="tricksterHidden" Content="0" FontSize="14"></Label>
 
             <Label Opacity="0.5" Name="opulentHidden" Content="0" FontSize="14"></Label>
         </Grid>

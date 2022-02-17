@@ -211,6 +211,7 @@ namespace poe_archnemesis_acs
             modNames.Add("solaris-touched");
             modNames.Add("innocence-touched");
             modNames.Add("ice-prison");
+            modNames.Add("trickster");
 
             //Show() to allow global event listener to work, Hide() to hide it from view
             this.Show();
@@ -1028,6 +1029,16 @@ namespace poe_archnemesis_acs
                     {
                         icePrisonHidden.Content = totalCount;
                         icePrisonLbl1.Opacity = 1.0;
+                    }
+
+                    break;
+
+                case "tricksterHidden":
+
+                    if (totalCount != 0)
+                    {
+                        tricksterHidden.Content = totalCount;
+                        tricksterLbl1.Opacity = 1.0;
                     }
 
                     break;

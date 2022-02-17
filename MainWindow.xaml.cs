@@ -88,8 +88,8 @@ namespace poe_archnemesis_acs
                                 //SHOW
                                 if (this.Visibility == Visibility.Hidden)
                                 {
-                                    loadingGrid.Opacity = 0;
-                                    cheatsheetGrid.Opacity = 1;
+                                    loadingGrid.Visibility = Visibility.Hidden;
+                                    cheatsheetGrid.Visibility = Visibility.Visible;
 
                                     ShowOverlay();
 
@@ -97,8 +97,8 @@ namespace poe_archnemesis_acs
                                 }
                                 else
                                 {
-                                    loadingGrid.Opacity = 1;
-                                    cheatsheetGrid.Opacity = 0;
+                                    loadingGrid.Visibility = Visibility.Visible;
+                                    cheatsheetGrid.Visibility = Visibility.Hidden;
                                     this.Hide();
                                 }
                             }
@@ -109,21 +109,21 @@ namespace poe_archnemesis_acs
                                 {
                                     Screenshot();
 
-                                    loadingGrid.Opacity = 1;
-                                    cheatsheetGrid.Opacity = 0;
+                                    loadingGrid.Visibility = Visibility.Visible;
+                                    cheatsheetGrid.Visibility = Visibility.Hidden;
 
                                     ShowOverlay();
                                     ReturnLabelToDefault();
                                     MatchImage();
 
-                                    cheatsheetGrid.Opacity = 1;
-                                    loadingGrid.Opacity = 0;
+                                    loadingGrid.Visibility = Visibility.Hidden;
+                                    cheatsheetGrid.Visibility = Visibility.Visible;
                                     modSearchTextBox.Focus();
                                 }
                                 else
                                 {
-                                    loadingGrid.Opacity = 1;
-                                    cheatsheetGrid.Opacity = 0;
+                                    loadingGrid.Visibility = Visibility.Visible;
+                                    cheatsheetGrid.Visibility = Visibility.Hidden;
                                     this.Hide();
                                 }
                             }

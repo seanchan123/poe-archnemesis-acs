@@ -90,9 +90,24 @@
 
             <tb:TaskbarIcon
                 Name="acsTaskbar"
-                IconSource="/Resources/Icon.ico"
+                Visibility="Visible"
                 ToolTipText="Archnemesis ACS" 
-            />
+                IconSource="/Resources/Icon.ico"
+                MenuActivation="LeftOrRightClick"
+            >
+                <tb:TaskbarIcon.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Settings/Hotkeys" />
+                        <Separator />
+                        <MenuItem Header="Contact">
+                            <MenuItem Header="Github" Click="MenuItem_Click" />
+                            <MenuItem Header="Discord" Click="MenuItem_Click" />
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="Exit" />
+                    </ContextMenu>
+                </tb:TaskbarIcon.ContextMenu>
+            </tb:TaskbarIcon>
 
             <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="26" Grid.RowSpan="3" Foreground="White">
                 Path of Exile Archnemesis Auto Cheat Sheet

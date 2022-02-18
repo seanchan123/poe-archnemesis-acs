@@ -245,6 +245,40 @@ namespace poe_archnemesis_acs
         }
         #endregion
 
+        #region TrayMenu Event Listeners
+        
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            switch (((System.Windows.Controls.MenuItem)e.OriginalSource).Header)
+            {
+                case "Settings/Hotkeys":
+
+                    //Create Settings.xaml and Settings.xaml.cs
+
+                    break;
+
+                case "Github":
+
+                    Process.Start("https://github.com/thelesserape/poe-archnemesis-acs");
+
+                    break;
+
+                case "Discord":
+
+                    Process.Start("https://discord.com/channels/@me/932642465301823548");
+
+                    break;
+
+                case "Exit":
+
+                    System.Windows.Application.Current.Shutdown();
+
+                    break;
+            }
+        }
+
+        #endregion
+
 
         #region Image Matching
         private void MatchImage()
@@ -1142,6 +1176,6 @@ namespace poe_archnemesis_acs
         }
 
         #endregion
-
+  
     }
 }

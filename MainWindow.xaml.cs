@@ -235,7 +235,7 @@ namespace poe_archnemesis_acs
         //EventListener for Closing when closing MainWindow/Exiting Application
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
-            MessageBox.Show("Closing called");
+            acsTaskbar.Dispose();
         }
 
         private void modSearchTextBox_KeyDown(object sender, KeyEventArgs e)

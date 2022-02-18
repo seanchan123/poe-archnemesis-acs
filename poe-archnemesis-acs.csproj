@@ -218,7 +218,6 @@
     <Resource Include="Resources\Mods\soul-conduit.png" />
     <Resource Include="Resources\Mods\toxic.png" />
     <Resource Include="Resources\Mods\vampiric.png" />
-    <Resource Include="Resources\Test1.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Mods\magma-barrier-2.png" />
@@ -228,9 +227,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Mods\hasted-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Test2.JPG" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

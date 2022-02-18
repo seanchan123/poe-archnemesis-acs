@@ -38,8 +38,8 @@
     - Waiting to procure all available mods to start working on search, works by typing in the overlay and darkening non-searched mods
 - Changeable hotkeys
     - As of now, **CTRL + SHIFT + A** to show/hide the overlay and **CTRL + SHIFT + S** to scan + show/hide the overlay
-- Working on System Tray menu
-    - Only an icon of the tool is in the overlay with the name as it's tooltip without any menu to exit etc.
+- ~~Working on System Tray menu~~ **(Completed on 18/02/22)**
+    - ~~Only an icon of the tool is in the overlay with the name as it's tooltip without any menu to exit etc.~~
 - Addition of tooltip
     - The tooltip for each Archnemesis mod will show its rewards and its reward(s) modifiers if there are any 
 - Design of Cheatsheet

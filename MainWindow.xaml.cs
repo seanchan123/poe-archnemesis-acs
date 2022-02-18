@@ -241,9 +241,9 @@ namespace poe_archnemesis_acs
         private void modSearchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             string searchText = modSearchTextBox.Text;
-
         }
         #endregion
+
 
         #region TrayMenu Event Listeners
         

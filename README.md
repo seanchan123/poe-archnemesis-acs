@@ -30,10 +30,10 @@
 
 ![Cheat Sheat Referenced](https://i.redd.it/s32npw296gg81.png)
 
-### Updates Incoming (as of 12/02/22):
+### Updates Incoming (as of 18/02/22):
 
-- Working on procuring more mods
-    - Mods without braces are not implemented yet; templates from wiki didn't work
+- ~~Working on procuring more mods~~ (Completed on **17/02/22**)
+    - ~~Mods without braces are not implemented yet; templates from wiki didn't work~~
 - Working search function
     - Waiting to procure all available mods to start working on search, works by typing in the overlay and darkening non-searched mods
 - Changeable hotkeys

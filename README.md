@@ -15,7 +15,7 @@
 
 ## Download Link
 
-- Still in development (v0.1.3)
+- Still in development (v0.2.0)
 
 <br />
 
@@ -32,7 +32,7 @@
 
 ### Updates Incoming (as of 18/02/22):
 
-- ~~Working on procuring more mods~~ (Completed on **17/02/22**)
+- ~~Working on procuring more mods~~ **(Completed on 17/02/22)**
     - ~~Mods without braces are not implemented yet; templates from wiki didn't work~~
 - Working search function
     - Waiting to procure all available mods to start working on search, works by typing in the overlay and darkening non-searched mods

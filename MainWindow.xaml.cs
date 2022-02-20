@@ -382,6 +382,7 @@ namespace poe_archnemesis_acs
                 }
                 catch (Exception ex)
                 {
+                    throw ex;
                 }
             }
         }

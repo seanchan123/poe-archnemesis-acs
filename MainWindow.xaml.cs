@@ -17,7 +17,6 @@ using Point = OpenCvSharp.Point;
 using Size = OpenCvSharp.Size;
 using Rect = OpenCvSharp.Rect;
 
-using MessageBox = System.Windows.MessageBox;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 
 namespace poe_archnemesis_acs

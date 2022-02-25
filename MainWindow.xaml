@@ -638,10 +638,10 @@
                     <Bold>{<Run Text="{Binding ElementName=necromancerHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" Name="bonebreakerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="incendiaryLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="24" Grid.Column="10" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
-                    <Run Text="Bonebreaker" />
-                    <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
+                    <Run Text="Incendiary" />
+                    <Bold>{<Run Text="{Binding ElementName=incendiaryHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
 
@@ -830,13 +830,13 @@
                     <Bold>{<Run Text="{Binding ElementName=consecratorHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" Name="incendiaryLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="incendiaryLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="21" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Incendiary" />
                     <Bold>{<Run Text="{Binding ElementName=incendiaryHidden, Path=Content}" />}</Bold>
                 </TextBlock>
             </Label>
-            <Label Opacity="0.5" Name="bonebreakerLbl4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
+            <Label Opacity="0.5" Name="bonebreakerLbl3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Black" FontSize="14" Grid.Row="22" Grid.Column="17" Grid.ColumnSpan="2" Background="White">
                 <TextBlock TextAlignment="Center">
                     <Run Text="Bonebreaker" />
                     <Bold>{<Run Text="{Binding ElementName=bonebreakerHidden, Path=Content}" />}</Bold>
@@ -1002,7 +1002,6 @@
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
-
 
         </Grid>
         <Grid Name="hiddenGrid">

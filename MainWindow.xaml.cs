@@ -135,7 +135,6 @@ namespace poe_archnemesis_acs
         }
         #endregion
 
-
         public MainWindow()
         {
             InitializeComponent();
@@ -467,7 +466,6 @@ namespace poe_archnemesis_acs
                         bonebreakerLbl1.Opacity = 1.0;
                         bonebreakerLbl2.Opacity = 1.0;
                         bonebreakerLbl3.Opacity = 1.0;
-                        bonebreakerLbl4.Opacity = 1.0;
                     }
 
                     break;
@@ -555,6 +553,7 @@ namespace poe_archnemesis_acs
                         incendiaryLbl1.Opacity = 1.0;
                         incendiaryLbl2.Opacity = 1.0;
                         incendiaryLbl3.Opacity = 1.0;
+                        incendiaryLbl4.Opacity = 1.0;
                     }
 
                     break;

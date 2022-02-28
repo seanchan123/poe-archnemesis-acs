@@ -282,80 +282,89 @@ namespace poe_archnemesis_acs
         #region Image Matching
         private void MatchImage()
         {
-            int totalCount = 0;
-
-            //Store in List<ArchnemesisModModel> to fetch it more accurately
-            List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
-
-            foreach (string modName in modNames)
+            try
             {
-                ArchnemesisModModel archnemesisMod = new ArchnemesisModModel();
-                archnemesisMod.Name = modName;
-                archnemesisMod.ImageSource = "..\\..\\Resources\\Mods\\" + modName + ".png";
-                archnemesisMod.ControlName = FindControlName(modName);
-                archnemesisMod.Count = 0;
+                int totalCount = 0;
 
-                archnemesisMods.Add(archnemesisMod);
-            }
+                //Store in List<ArchnemesisModModel> to fetch it more accurately
+                List<ArchnemesisModModel> archnemesisMods = new List<ArchnemesisModModel>();
 
-            var stopwatch = new Stopwatch();
-            stopwatch.Start();
-
-            using (Mat screenshot = new Mat("..\\..\\Resources\\Capture.jpg"))
-            //using (Mat screenshot = new Mat("..\\..\\Resources\\Test1.png"))
-            {
-                foreach (ArchnemesisModModel archnemesisMod in archnemesisMods)
+                foreach (string modName in modNames)
                 {
-                    using (Mat archnemesisLogo = new Mat(archnemesisMod.ImageSource))
-                    using (Mat results = new Mat(screenshot.Rows - archnemesisLogo.Rows + 1, screenshot.Cols - archnemesisLogo.Cols + 1, MatType.CV_32FC1))
-                    {
-                        Cv2.MatchTemplate(screenshot, archnemesisLogo, results, TemplateMatchModes.CCorrNormed);
-                        Cv2.Threshold(results, results, 0.98, 1.0, ThresholdTypes.Tozero);
+                    ArchnemesisModModel archnemesisMod = new ArchnemesisModModel();
+                    archnemesisMod.Name = modName;
+                    archnemesisMod.ImageSource = "Resources\\Mods\\" + modName + ".png";
+                    archnemesisMod.ControlName = FindControlName(modName);
+                    archnemesisMod.Count = 0;
 
-                        //Random colors for match
-                        Random randomValue = new Random();
-                        int rValue = randomValue.Next(0, 255);
-                        int gValue = randomValue.Next(0, 255);
-                        int bValue = randomValue.Next(0, 255);
-
-                        while (true)
-                        {
-                            double minval, maxval, threshold = 0.98;
-                            Point minloc, maxloc;
-                            Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
-
-                            if (maxval >= threshold)
-                            {
-
-                                //Setup the rectangle to draw
-                                Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(archnemesisLogo.Width, archnemesisLogo.Height));
-
-                                //Draw a rectangle of the matching area
-                                Cv2.Rectangle(screenshot, r, Scalar.FromRgb(rValue, gValue, bValue), 2);
-
-                                //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
-                                Rect outRect;
-                                Cv2.FloodFill(results, maxloc, new Scalar(0), out outRect, new Scalar(0.1), new Scalar(1.0));
-
-                                //Add count if archnemesis mod exists
-                                archnemesisMod.Count++;
-                                totalCount++;
-                            }
-                            else
-                                break;
-                        }
-                    }
-
-                    BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
+                    archnemesisMods.Add(archnemesisMod);
                 }
 
-                //Cv2.ImShow("Matches", screenshot);
-                //Cv2.WaitKey();
-            }
+                var stopwatch = new Stopwatch();
+                stopwatch.Start();
 
-            stopwatch.Stop();
-            File.Delete("..\\..\\Resources\\Capture.jpg");
-            //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
+                using (Mat screenshot = new Mat("Capture.jpg"))
+                //using (Mat screenshot = new Mat("..\\..\\Resources\\Test1.png"))
+                {
+                    foreach (ArchnemesisModModel archnemesisMod in archnemesisMods)
+                    {
+                        using (Mat archnemesisLogo = new Mat(archnemesisMod.ImageSource))
+                        using (Mat results = new Mat(screenshot.Rows - archnemesisLogo.Rows + 1, screenshot.Cols - archnemesisLogo.Cols + 1, MatType.CV_32FC1))
+                        {
+                            Cv2.MatchTemplate(screenshot, archnemesisLogo, results, TemplateMatchModes.CCorrNormed);
+                            Cv2.Threshold(results, results, 0.98, 1.0, ThresholdTypes.Tozero);
+
+                            //Random colors for match
+                            Random randomValue = new Random();
+                            int rValue = randomValue.Next(0, 255);
+                            int gValue = randomValue.Next(0, 255);
+                            int bValue = randomValue.Next(0, 255);
+
+                            while (true)
+                            {
+                                double minval, maxval, threshold = 0.98;
+                                Point minloc, maxloc;
+                                Cv2.MinMaxLoc(results, out minval, out maxval, out minloc, out maxloc);
+
+                                if (maxval >= threshold)
+                                {
+
+                                    //Setup the rectangle to draw
+                                    Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(archnemesisLogo.Width, archnemesisLogo.Height));
+
+                                    //Draw a rectangle of the matching area
+                                    Cv2.Rectangle(screenshot, r, Scalar.FromRgb(rValue, gValue, bValue), 2);
+
+                                    //Fill in the res Mat so you don't find the same area again in the MinMaxLoc
+                                    Rect outRect;
+                                    Cv2.FloodFill(results, maxloc, new Scalar(0), out outRect, new Scalar(0.1), new Scalar(1.0));
+
+                                    //Add count if archnemesis mod exists
+                                    archnemesisMod.Count++;
+                                    totalCount++;
+                                }
+                                else
+                                    break;
+                            }
+                        }
+
+                        BindModToHidden(archnemesisMod.ControlName, archnemesisMod.Count);
+                    }
+
+                    //Cv2.ImShow("Matches", screenshot);
+                    //Cv2.WaitKey();
+                }
+
+                stopwatch.Stop();
+                File.Delete("Capture.jpg");
+                //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error Message: \n" + ex.Message);
+                System.Windows.Forms.MessageBox.Show("Inner Error Message: \n" + ex.InnerException.Message);
+                throw ex;
+            }
         }
 
         private void Screenshot()
@@ -375,13 +384,23 @@ namespace poe_archnemesis_acs
                 }
 
                 //Save the screenshot as a Jpg image
-                var uniqueFileName = "..\\..\\Resources\\Capture.jpg";
+                var uniqueFileName = "Capture.jpg";
                 try
                 {
-                    bitmap.Save(uniqueFileName, ImageFormat.Jpeg);
+                    using (MemoryStream memory = new MemoryStream())
+                    {
+                        using (FileStream fs = new FileStream(uniqueFileName, FileMode.Create, FileAccess.ReadWrite))
+                        {
+                            bitmap.Save(memory, ImageFormat.Jpeg);
+                            byte[] bytes = memory.ToArray();
+                            fs.Write(bytes, 0, bytes.Length);
+                        }
+                    }
+                    //bitmap.Save(uniqueFileName, ImageFormat.Jpeg);
                 }
                 catch (Exception ex)
                 {
+                    System.Windows.Forms.MessageBox.Show("Screenshot Error: \n" + ex.Message);
                     throw ex;
                 }
             }

@@ -27,7 +27,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>23</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -129,14 +130,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Icon.ico" />
-    <Resource Include="Resources\Logo.png" />
-    <Resource Include="Resources\Mods\empowered-elements.png" />
-    <Resource Include="Resources\Mods\mana-siphoner.png" />
-    <Resource Include="Resources\Mods\mirror-image.png" />
-    <Resource Include="Resources\Mods\storm-strider.png" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="FontAwesome.WPF">
       <Version>4.7.0.9</Version>
     </PackageReference>
@@ -163,69 +156,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Mods\arcane-buffer.png" />
-    <Resource Include="Resources\Mods\bloodletter.png" />
-    <Resource Include="Resources\Mods\bonebreaker.png" />
-    <Resource Include="Resources\Mods\brine-king-touched.png" />
-    <Resource Include="Resources\Mods\corrupter.png" />
-    <Resource Include="Resources\Mods\drought-bringer.png" />
-    <Resource Include="Resources\Mods\effigy.png" />
-    <Resource Include="Resources\Mods\frenzied.png" />
-    <Resource Include="Resources\Mods\frost-strider.png" />
-    <Resource Include="Resources\Mods\frostweaver.png" />
-    <Resource Include="Resources\Mods\incendiary.png" />
-    <Resource Include="Resources\Mods\invulnerable.png" />
-    <Resource Include="Resources\Mods\juggernaut.png" />
-    <Resource Include="Resources\Mods\magma-barrier.png" />
-    <Resource Include="Resources\Mods\malediction.png" />
-    <Resource Include="Resources\Mods\overcharged.png" />
-    <Resource Include="Resources\Mods\permafrost.png" />
-    <Resource Include="Resources\Mods\rejuvenating.png" />
-    <Resource Include="Resources\Mods\shakari-touched.png" />
-    <Resource Include="Resources\Mods\stormweaver.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\crystal-skinned.png" />
-    <Resource Include="Resources\Mods\entangler.png" />
-    <Resource Include="Resources\Mods\executioner.png" />
-    <Resource Include="Resources\Mods\necromancer.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\gargantuan.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\echoist.png" />
-    <Resource Include="Resources\Mods\flame-strider.png" />
-    <Resource Include="Resources\Mods\hasted.png" />
-    <Resource Include="Resources\Mods\heralding-minions.png" />
-    <Resource Include="Resources\Mods\sentinel.png" />
-    <Resource Include="Resources\Mods\soul-eater.png" />
-    <Resource Include="Resources\Mods\steel-infused.png" />
-    <Resource Include="Resources\Mods\treant-horde.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\deadeye.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\berserker.png" />
-    <Resource Include="Resources\Mods\chaosweaver.png" />
-    <Resource Include="Resources\Mods\consecrator.png" />
-    <Resource Include="Resources\Mods\dynamo.png" />
-    <Resource Include="Resources\Mods\flameweaver.png" />
-    <Resource Include="Resources\Mods\soul-conduit.png" />
-    <Resource Include="Resources\Mods\toxic.png" />
-    <Resource Include="Resources\Mods\vampiric.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\magma-barrier-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\empowering-minions.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\hasted-2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -238,61 +168,218 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Mods\hexer.png" />
+    <Resource Include="Resources\Icon.ico" />
+    <Resource Include="Resources\Logo.png" />
+    <Content Include="Resources\Mods\abberath-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\arakaali-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\arcane-buffer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\assassin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\berserker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\bloodletter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\bombardier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\bonebreaker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\brine-king-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\chaosweaver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\consecrator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\corpse-detonator-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\corpse-detonator.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\corrupter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\crystal-skinned.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\deadeye.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\drought-bringer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\dynamo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\echoist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\effigy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\empowered-elements.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\empowering-minions.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\entangler.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\evocationist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\executioner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\flame-strider-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\flame-strider.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\flameweaver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\frenzied.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\frost-strider.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\frostweaver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\gargantuan.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\hasted-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\hasted.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\heralding-minions.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\hexer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\ice-prison.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\incendiary.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\innocence-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\invulnerable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\juggernaut.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\kitava-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\lunaris-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\magma-barrier-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\magma-barrier.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\malediction.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\mana-siphoner.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\mirror-image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\necromancer.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\opulent.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\overcharged.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\permafrost.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\rejuvenating.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\sentinel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\shakari-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\solaris-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\soul-conduit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\soul-eater-2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\soul-eater.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\steel-infused.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\storm-strider.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\stormweaver.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\temporal-bubble.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\toxic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\treant-horde.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\trickster.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\tukohama-touched.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Mods\vampiric.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Mods\temporal-bubble.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\bombardier.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\corpse-detonator.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\evocationist.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\tukohama-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\assassin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\arakaali-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\flame-strider-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\opulent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\lunaris-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\solaris-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\innocence-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\ice-prison.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\soul-eater-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\trickster.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\kitava-touched.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\corpse-detonator-2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Mods\abberath-touched.png" />
+    <Resource Include="Resources\Showcase\Showcase_1.JPG" />
+    <Resource Include="Resources\Showcase\Showcase_2.JPG" />
+    <Resource Include="Resources\Showcase\Showcase_3.JPG" />
+    <Resource Include="Resources\Showcase\Thumbnail.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

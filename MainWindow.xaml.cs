@@ -200,6 +200,7 @@ namespace poe_archnemesis_acs
             modNames.Add("temporal-bubble");
             modNames.Add("bombardier");
             modNames.Add("corpse-detonator");
+            modNames.Add("corpse-detonator-2");
             modNames.Add("evocationist");
             modNames.Add("tukohama-touched");
             modNames.Add("assassin");

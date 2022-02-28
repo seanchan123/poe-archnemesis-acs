@@ -288,5 +288,11 @@
   <ItemGroup>
     <Resource Include="Resources\Mods\kitava-touched.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\corpse-detonator-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Mods\abberath-touched.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

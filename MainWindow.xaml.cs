@@ -201,6 +201,7 @@ namespace poe_archnemesis_acs
             modNames.Add("bombardier");
             modNames.Add("corpse-detonator");
             modNames.Add("corpse-detonator-2");
+            modNames.Add("corpse-detonator-3");
             modNames.Add("evocationist");
             modNames.Add("tukohama-touched");
             modNames.Add("assassin");
@@ -328,7 +329,6 @@ namespace poe_archnemesis_acs
 
                                 if (maxval >= threshold)
                                 {
-
                                     //Setup the rectangle to draw
                                     Rect r = new Rect(new Point(maxloc.X, maxloc.Y), new Size(archnemesisLogo.Width, archnemesisLogo.Height));
 
@@ -354,7 +354,6 @@ namespace poe_archnemesis_acs
                     //Cv2.ImShow("Matches", screenshot);
                     //Cv2.WaitKey();
                 }
-
                 stopwatch.Stop();
                 File.Delete("Capture.jpg");
                 //MessageBox.Show(stopwatch.ElapsedMilliseconds.ToString());
